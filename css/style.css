@@ -1,0 +1,318 @@
+/* общие */
+
+body, html {
+  font-family: "FuturaBookC",verdana, sans-serif;
+  color: white;
+  /* height: 100%; */
+}
+
+.bg {
+  background-image: url('../things/environment_1.png');
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* border: solid blue; */
+}
+
+
+.black {
+    color: black !important;
+}
+
+/* первая страница */
+
+.main-logo {
+    margin-top: 8vh;
+}
+
+.moto {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.main-moto {
+    margin-top: 8vh;
+}
+
+.arrow {
+    margin-top: 8vh;
+}
+
+.main-btn {
+    margin-top: 8vh;
+}
+
+.btn {
+    width: 200px;
+    border: 2px solid #fff;
+    /* color: #fff; */
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.white {
+    color: white !important;
+}
+
+.btn:hover {
+    color: #015dd9;
+    border: 2px solid #015dd9;
+}
+
+.btn:active {
+    color: white;
+    border: 2px solid white;
+    background: #015dd9;
+}
+
+
+/* вторая страница */
+
+.container-fluid {
+    padding: 0;
+}
+
+.card-moto {
+    padding-top: 8vh;
+    /* border: solid blue; */
+}
+
+.first-row {
+    margin-top: 30px;
+}
+
+.partners {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.partners li {
+    margin: 10px;
+    /* border: solid yellow; */
+}
+
+/* карточки */
+
+.cards {
+    margin-top: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+}
+
+.prombez {
+    margin-top: 25px;
+    background-image: url('../things/prombez.png');
+}
+
+.pla {
+    background-image: url('../things/pla.png');
+}
+
+.sro {
+    background-image: url('../things/sro.png');
+}
+
+.project {
+    background-image: url('../things/project.png');
+}
+
+.executed {
+    background-image: url('../things/executed.png');
+}
+
+.description {
+    padding: 10px;
+    font-size: 20px;
+}
+
+/*=-footer-=*/
+footer {
+	color: #fff;
+	background-attachment: fixed;
+	background-color:#222;
+    background-image: url(https://s7.postimg.org/uyf0oioaz/footer-bg.png);
+	background-size: cover;
+	background-position: bottom;
+}
+
+footer p {
+	color: #ccc;
+}
+
+footer a {
+	color: #ccc;
+}
+
+.social-pet li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.social-pet li a {
+    margin-bottom: 10px;
+
+	height: 35px;
+	width: 35px;
+	border-radius: 50%;
+	text-align: center;
+	display: block;
+	line-height: 35px;
+	background-color: #3a5a95;
+	color: #fff;
+}
+
+.social-pet li:nth-child(2) a {
+	background-color: #57aced;
+}
+
+.social-pet li:nth-child(3) a {
+	background-color: #dd4f43;
+}
+
+.social-pet li:nth-child(4) a {
+	background-color: #6b27b2;
+}
+
+.social-pet li a:hover {
+	background-color: #0141a2;
+}
+
+.social-pet li a:hover i {
+	transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+}
+
+.recent-post li {
+	display: block;
+	color: #ccc;
+	margin-bottom: 25px;
+			}
+
+.recent-post li label {
+	float: left;
+	border: 2px solid #ccc;
+	padding: 1px 7px;
+	text-align: center;
+}
+
+.recent-post li label span {
+	color: #fff;
+}
+
+footer .input-group-addon {
+	background-color: #0141a2;
+	padding: 7px;
+}
+
+.f-address li {
+	display: inline-block;
+}
+
+.f-address li i {
+	color: #2995de;
+	font-size: 18px;
+}
+
+.f-address li a {
+	color: #ccc;
+}
+/*=-Copyright-=*/
+.copyright {
+	background-color: #111;
+	padding: 12px 0;
+    font-size:14px;
+}
+
+/* контакты */
+
+.bg-contacts {
+    background-image: url('../things/contacts_1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+}
+
+.main-logo-contacts {
+    margin-top: 2vh;
+}
+
+.contacts-form {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+/* услуги */
+
+.bg-services {
+    /* background-image: url('../things/contacts_1.jpg'); */
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+}
+
+
+
+
+
+
+/* разделитель */
+
+.razdelitel{
+ position: relative;
+ display: block;
+ margin:25px auto 20px;
+ width: 1px;
+ height: 2px;
+}
+.razdelitel:before,
+.razdelitel:after{
+ content:'';
+ position: absolute;
+ top:0;
+ width: 70px;
+ height: 2px;
+ background-color: black;
+}
+.razdelitel:before{
+ left:15px;
+}
+.razdelitel:after{
+ right: 15px;
+}
+.razdelitel div{
+ position: relative;
+}
+.razdelitel div:before,
+.razdelitel div:after{
+ content:'';
+ position: absolute;
+ top:50%;
+ margin-top: -4px;
+ width: 10px;
+ height: 10px;
+ border:1px solid red;
+ -webkit-transform: rotate(45deg);
+ -ms-transform: rotate(45deg);
+ -o-transform: rotate(45deg);
+ transform: rotate(45deg);
+}
+.razdelitel div:before{
+ left: -7px;
+}
+.razdelitel div:after{
+ right: -7px;
+}
