@@ -5,22 +5,20 @@ body, html {
   color: white;
 }
 
-
 .bg {
+  background-image: url('../things/environment.webp');
   background-image: url('../things/environment.jpg');
   height: 100vh;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
   /* border: solid blue; */
 }
 
 .bg-dark {
     background-color: #222 !important;
 }
-
 
 .black {
     color: black !important;
@@ -118,22 +116,27 @@ body, html {
 
 .prombez {
     margin-top: 25px;
+    background-image: url('../things/prombez.webp');
     background-image: url('../things/prombez.jpg');
 }
 
 .pla {
+    background-image: url('../things/pla.webp');
     background-image: url('../things/pla.jpg');
 }
 
 .sro {
+    background-image: url('../things/pla.webp');
     background-image: url('../things/sro.jpg');
 }
 
 .project {
+    background-image: url('../things/pla.webp');
     background-image: url('../things/project.jpg');
 }
 
 .executed {
+    background-image: url('../things/pla.webp');
     background-image: url('../things/executed.jpg');
 }
 
@@ -244,6 +247,7 @@ footer .input-group-addon {
 /* контакты */
 
 .bg-contacts {
+    background-image: url('../things/contacts.webp');
     background-image: url('../things/contacts.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -267,7 +271,6 @@ footer .input-group-addon {
 /* услуги */
 
 .bg-services {
-    /* background-image: url('../things/contacts_1.jpg'); */
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
