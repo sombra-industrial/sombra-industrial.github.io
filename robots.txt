@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: 
+Disallow: /
 Crawl-delay: 5
 Sitemap: https://sombra-industrial.ru
