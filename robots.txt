@@ -1,4 +1,4 @@
 User-agent: *
-Allow: /
-Crawl-delay: 5
-Sitemap: https://sombra-industrial.ru
+Disallow: /contacts
+Sitemap: http://sombra-ndustrial.ru/sitemap.xml
+Host: sombra-ndustrial.ru
