@@ -222,7 +222,8 @@ footer a {
 
 footer .input-group-addon {
 	background-color: #0141a2;
-	padding: 7px;
+    border: none;
+	/* padding: 7px; */
 }
 
 .f-address li {
