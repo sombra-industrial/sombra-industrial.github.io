@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /contacts
-Sitemap: http://sombra-ndustrial.ru/sitemap.xml
-Host: sombra-ndustrial.ru
+Sitemap: https://sombra-ndustrial.ru/sitemap.xml
+Host: https://sombra-ndustrial.ru
