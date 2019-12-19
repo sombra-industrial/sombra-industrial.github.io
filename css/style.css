@@ -14,7 +14,7 @@ body, html {
 } */
 
 .bg {
-  background-image: url('../things/environment.webp');
+  /* background-image: url('../things/environment.webp'); */
   background-image: url('../things/environment.jpg');
   height: 100vh;
   width: 100%;
@@ -124,27 +124,27 @@ body, html {
 
 .prombez {
     margin-top: 25px;
-    background-image: url('../things/prombez.webp');
+    /* background-image: url('../things/prombez.webp'); */
     background-image: url('../things/prombez.jpg');
 }
 
 .pla {
-    background-image: url('../things/pla.webp');
+    /* background-image: url('../things/pla.webp'); */
     background-image: url('../things/pla.jpg');
 }
 
 .sro {
-    background-image: url('../things/pla.webp');
+    /* background-image: url('../things/pla.webp'); */
     background-image: url('../things/sro.jpg');
 }
 
 .project {
-    background-image: url('../things/pla.webp');
+    /* background-image: url('../things/pla.webp'); */
     background-image: url('../things/project.jpg');
 }
 
 .executed {
-    background-image: url('../things/pla.webp');
+    /* background-image: url('../things/pla.webp'); */
     background-image: url('../things/executed.jpg');
 }
 
