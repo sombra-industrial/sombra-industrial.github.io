@@ -3,21 +3,30 @@
 body, html {
   font-family: "FuturaBookC",verdana, sans-serif;
   color: white;
+  /* border: solid blue; */
+  /* margin-top: auto; */
+  /* padding: 20px; */
 }
 
-/* .no-webp.bg {
+/* body {
+      margin-top: -8vh;
+} */
+
+
+.webp .bg {
+    background-image: url('../things/environment.webp');
+}
+.no-webp .bg {
     background-image: url('../things/environment.jpg')
 }
 
-.webp.bg {
-    background-image: url('../things/environment.webp');
-} */
+
 
 .bg {
   /* background-image: url('../things/environment.webp'); */
   background-image: url('../things/environment.jpg');
   height: 100vh;
-  width: 100%;
+  width: auto;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -100,6 +109,7 @@ body, html {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    /* border: solid yellow; */
 }
 
 .partners li {
@@ -112,7 +122,7 @@ body, html {
     margin-top: 5px;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100vw;
+    /* width: 100vw; */
     height: 400px;
 
     /* border: solid blue; */
@@ -122,10 +132,25 @@ body, html {
     font-size: 30px;
 }
 
+
+.webp .prombez {
+    background-image: url('../things/prombez.webp');
+}
+.no-webp .prombez {
+    background-image: url('../things/prombez.jpg')
+}
+
 .prombez {
     margin-top: 25px;
     /* background-image: url('../things/prombez.webp'); */
     background-image: url('../things/prombez.jpg');
+}
+
+.webp .pla {
+    background-image: url('../things/pla.webp');
+}
+.no-webp .pla {
+    background-image: url('../things/pla.jpg')
 }
 
 .pla {
@@ -133,14 +158,35 @@ body, html {
     background-image: url('../things/pla.jpg');
 }
 
+.webp .sro {
+    background-image: url('../things/sro.webp');
+}
+.no-webp .sro {
+    background-image: url('../things/sro.jpg')
+}
+
 .sro {
     /* background-image: url('../things/pla.webp'); */
     background-image: url('../things/sro.jpg');
 }
 
+.webp .project {
+    background-image: url('../things/project.webp');
+}
+.no-webp .project {
+    background-image: url('../things/project.jpg')
+}
+
 .project {
     /* background-image: url('../things/pla.webp'); */
     background-image: url('../things/project.jpg');
+}
+
+.webp .executed {
+    background-image: url('../things/executed.webp');
+}
+.no-webp .executed {
+    background-image: url('../things/executed.jpg')
 }
 
 .executed {
