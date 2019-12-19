@@ -5,6 +5,14 @@ body, html {
   color: white;
 }
 
+/* .no-webp.bg {
+    background-image: url('../things/environment.jpg')
+}
+
+.webp.bg {
+    background-image: url('../things/environment.webp');
+} */
+
 .bg {
   background-image: url('../things/environment.webp');
   background-image: url('../things/environment.jpg');
@@ -150,7 +158,6 @@ footer {
 	color: #fff;
 	background-attachment: fixed;
 	background-color:#222;
-    background-image: url(https://s7.postimg.org/uyf0oioaz/footer-bg.png);
 	background-size: cover;
 	background-position: bottom;
 }
