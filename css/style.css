@@ -23,8 +23,7 @@ body, html {
 
 
 .bg {
-  /* background-image: url('../things/environment.webp'); */
-  background-image: url('../things/environment.jpg');
+  /* background-image: url('../things/environment.jpg'); */
   height: 100vh;
   width: auto;
   background-position: center;
@@ -142,8 +141,7 @@ body, html {
 
 .prombez {
     margin-top: 25px;
-    /* background-image: url('../things/prombez.webp'); */
-    background-image: url('../things/prombez.jpg');
+    /* background-image: url('../things/prombez.jpg'); */
 }
 
 .webp .pla {
@@ -154,8 +152,7 @@ body, html {
 }
 
 .pla {
-    /* background-image: url('../things/pla.webp'); */
-    background-image: url('../things/pla.jpg');
+    /* background-image: url('../things/pla.jpg'); */
 }
 
 .webp .sro {
@@ -166,8 +163,7 @@ body, html {
 }
 
 .sro {
-    /* background-image: url('../things/pla.webp'); */
-    background-image: url('../things/sro.jpg');
+    /* background-image: url('../things/sro.jpg'); */
 }
 
 .webp .project {
@@ -178,8 +174,7 @@ body, html {
 }
 
 .project {
-    /* background-image: url('../things/pla.webp'); */
-    background-image: url('../things/project.jpg');
+    /* background-image: url('../things/project.jpg'); */
 }
 
 .webp .executed {
@@ -190,8 +185,7 @@ body, html {
 }
 
 .executed {
-    /* background-image: url('../things/pla.webp'); */
-    background-image: url('../things/executed.jpg');
+    /* background-image: url('../things/executed.jpg'); */
 }
 
 .description {
