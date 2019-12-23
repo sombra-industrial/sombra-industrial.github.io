@@ -8,11 +8,6 @@ body, html {
   /* padding: 20px; */
 }
 
-/* body {
-      margin-top: -8vh;
-} */
-
-
 .webp .bg {
     background-image: url('../things/environment.webp');
 }
@@ -29,6 +24,7 @@ body, html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: grey;
   /* border: solid blue; */
 }
 
@@ -123,7 +119,7 @@ body, html {
     background-repeat: no-repeat;
     /* width: 100vw; */
     height: 400px;
-
+    background-color: grey;
     /* border: solid blue; */
 }
 
@@ -226,6 +222,10 @@ footer a {
 	line-height: 35px;
 	background-color: #3a5a95;
 	color: #fff;
+}
+
+a>.fab {
+    line-height: 2;
 }
 
 .social-pet li:nth-child(2) a {
