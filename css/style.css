@@ -208,9 +208,13 @@ footer .input-group-addon {
     font-size:14px;
 }
 /* контакты */
-.bg-contacts {
+.webp .bg-contacts {
     background-image: url('../things/contacts.webp');
-    background-image: url('../things/contacts.jpg');
+}
+.no-webp .bg-contacts {
+    background-image: url('../things/contacts.jpg')
+}
+.bg-contacts {
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
