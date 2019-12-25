@@ -8,6 +8,7 @@
     <link rel="preload" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"  as="style" onload="this.rel='stylesheet'">
 
     <link rel="preload" href="css/style.css" as="style" onload="this.rel='stylesheet'">
+
     <link rel="icon" href="https://sombra-industrial.ru/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="https://sombra-industrial.ru/favicon.ico" type="image/x-icon">
 
@@ -32,7 +33,6 @@
     <link rel="icon" type="image/png" sizes="96x96" href="things/apple-icons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="things/apple-icons/favicon-16x16.png">
     <link rel="manifest" href="manifest.json">
-
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="things/apple-icons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -41,6 +41,7 @@
 <body>
     <div class="bg">
         <nav class="navbar navbar-expand-lg navbar navbar-dark  bg-transparent">
+            <!-- <a class="navbar-brand" href="#">Sombra</a> -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -59,30 +60,30 @@
             <div class="container text-center">
                 <div class="row">
                     <div class="col-sm-12">
-                        <a href="#">
-                            <picture>
-                                <source srcset="things/sombra-industrial.webp" type="image/webp">
-                                <img class="main-logo" src="things/sombra-industrial.png" alt="Sombra Industrial">
-                            </picture>
-                        </a>
+                          <a href="#">
+                              <picture>
+                                  	<source srcset="things/sombra-industrial.webp" type="image/webp">
+                                  	<img class="main-logo" src="things/sombra-industrial.png" alt="Sombra Industrial">
+                              </picture>
+                          </a>
                     </div>
                 </div>
                 <div class="row d-none d-sm-block">
                     <div class="col-sm-12">
-                        <p class="moto main-moto">промышленная безопасность в ваших руках</p>
+                          <p class="moto main-moto">промышленная безопасность в ваших руках</p>
                     </div>
                 </div>
                 <div class="row d-none d-sm-block">
                     <div class="col-sm-12">
-                        <a class="btn btn-link main-btn white" href="#cardlist">узнать больше</a>
+                          <a class="btn btn-link main-btn white" href="#cardlist">узнать больше</a>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <picture>
-                            <source srcset="things/arrow.webp" type="image/webp">
-                            <img class="arrow" src="things/arrow.png" alt="Стрелка">
-                        </picture>
+                          <picture>
+                                <source srcset="things/arrow.webp" type="image/webp">
+                                <img class="arrow" src="things/arrow.png" alt="Стрелка">
+                          </picture>
                     </div>
                 </div>
             </div>
@@ -103,19 +104,18 @@
 
     <section>
         <h2 class="d-none">Партнеры</h2>
-
         <div class="container-fluid d-none d-sm-block">
             <ul class="partners">
                 <li>
                     <picture>
-                        <source srcset="things/arhbum.webp" type="image/webp">
-                        <img src="things/arhbum.jpg" alt="Архбум">
+                    	<source srcset="things/arhbum.webp" type="image/webp">
+                    	<img src="things/arhbum.jpg" alt="Архбум">
                     </picture>
                 </li>
                 <li>
                     <picture>
-                        <source srcset="things/beliydom.webp" type="image/webp">
-                        <img src="things/beliydom.jpg" alt="Белый дом">
+                    	<source srcset="things/beliydom.webp" type="image/webp">
+                    	<img src="things/beliydom.jpg" alt="Белый дом">
                     </picture>
                 </li>
                 <li>
@@ -181,7 +181,6 @@
             </ul>
         </div>
     </section>
-
     <section class="main text-center" id="cardlist">
         <h2 class="d-none">Услуги</h2>
         <div class="container-fluid">
@@ -261,7 +260,7 @@
                         <li>
                             <div class="row">
                                 <div class="col-1"><i class="fas fa-phone-volume"></i></div>
-                                    <div class="col-10">
+                                <div class="col-10">
                                     <h6 class="font-weight-bold mb-0">Phone:</h6>
                                     <p><a href="#">+7 (902) 930-89-34</a></p>
                                 </div>
@@ -283,6 +282,7 @@
                         </li>
                     </ul>
                 </div>
+
                 <div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
                     <h5 class="mb-4 font-weight-bold">LATEST UPDATES</h5>
                     <ul class="recent-post">
@@ -302,10 +302,10 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
                     <h5 class="mb-4 font-weight-bold">CONNECT WITH US</h5>
-                    <form class="input-group" action="https://formspree.io/xoqvowyo" method="POST">
-                        <input type="text" class="form-control" placeholder="Your Email Address" name="_replyto" aria-label="email address">
-                        <button type="submit" class="input-group-addon" id="basic-addon2" aria-label="submit"><i class="fas fa-check"></i></button>
-                    </form>
+                        <form class="input-group" action="https://formspree.io/xoqvowyo" method="POST">
+                            <input type="text" class="form-control" placeholder="Your Email Address" name="_replyto" aria-label="email address">
+                            <button type="submit" class="input-group-addon" id="basic-addon2" aria-label="submit"><i class="fas fa-check"></i></button>
+                        </form>
                     <ul class="social-pet mt-4 text-center">
                         <li><a href="#" title="vk"><i class="fab fa-vk"></i></a></li>
                         <li><a href="#" title="twitter"><i class="fab fa-twitter"></i></a></li>
@@ -316,7 +316,7 @@
             </div>
         </div>
     </footer>
-<!-- Copyright -->
+    <!-- Copyright -->
     <section class="copyright">
         <h2 class="d-none">Copyright</h2>
         <div class="container">
@@ -345,17 +345,19 @@
                         trackLinks:true,
                         accurateTrackBounce:true
                     });
-            } catch(e) { }
-        });
-        var n = d.getElementsByTagName("script")[0],
-            s = d.createElement("script"),
-            f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "https://mc.yandex.ru/metrika/watch.js";
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
+                } catch(e) { }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
         })(document, window, "yandex_metrika_callbacks");
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/56592421" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
@@ -365,8 +367,8 @@
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'UA-154670239-1');
+        gtag('js', new Date());
+        gtag('config', 'UA-154670239-1');
     </script>
 </body>
 </html>
