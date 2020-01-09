@@ -49,6 +49,7 @@ body, html {
 .white {
     color: white !important;
 }
+
 .btn:hover {
     color: #015dd9;
     border: 2px solid #015dd9;
@@ -287,3 +288,83 @@ footer .input-group-addon {
 .razdelitel div:after{
  right: -7px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fa-vk::before {
+content: url('../things/vk.svg');
+display: inline-block;
+height: 16px;
+width: 18px;
+padding-top: 5px;
+}
+
+.fa-twitter::before {
+content: url('../things/twitter.svg');
+display: inline-block;
+height: 18px;
+width: 16px;
+padding-top: 5px;;
+}
+
+.fa-twitter-blue::before {
+content: url('../things/twitter-blue.svg');
+display: inline-block;
+height: 18px;
+width: 16px;
+padding-top: 5px;;
+}
+
+.fa-whatsapp::before {
+content: url('../things/whatsapp.svg');
+display: inline-block;
+height: 18px;
+width: 16px;
+padding-top: 5px;
+}
+
+.fa-instagram::before {
+content: url('../things/instagram.svg');
+display: inline-block;
+height: 18px;
+width: 16px;
+padding-top: 5px;
+}
+
+.fa-map-marker::before {
+content: url('../things/location.svg');
+display: inline-block;
+height: 18px;
+width: 16px;
+padding-top: 5px;
+}
+.fa-envelope::before {
+content: url('../things/email.svg');
+display: inline-block;
+height: 18px;
+width: 16px;
+padding-top: 5px;
+}
+.fa-phone-volume::before {
+content: url('../things/phone.svg');
+display: inline-block;
+height: 18px;
+width: 16px;
+padding-top: 5px;
+}
+.fa-check::before {
+content: url('../things/check.svg');
+display: inline-block;
+height: 18px;
+width: 16px;
+padding-top: 5px;
