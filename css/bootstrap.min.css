@@ -18,6 +18,11 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0.5rem !important;
 }
 
+.mb-3,
+.my-3 {
+  margin-bottom: 1rem !important;
+}
+
 .mb-4,
 .my-4 {
   margin-bottom: 1.5rem !important;
@@ -121,6 +126,10 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
+}
+
+.h4, h4 {
+    font-size: 1.5rem;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -1100,7 +1109,7 @@ label {
     color: #495057;
     background-color: #fff;
   }
-  .input-group {
+ .input-group {
     position: relative;
     display: flex;
     flex-wrap: wrap; // For form validation feedback
@@ -1122,5 +1131,6 @@ label {
       + .custom-select,
       + .custom-file {
         margin-left: -$input-border-width;
-      }
+        }
     }
+}

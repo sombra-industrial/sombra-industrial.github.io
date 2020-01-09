@@ -3,6 +3,11 @@ body, html {
   font-family: "FuturaBookC",verdana, sans-serif;
   color: white;
 }
+
+li {
+    list-style: none;
+}
+
 .webp .bg {
     background-image: url('../things/environment.webp');
 }
@@ -234,6 +239,8 @@ footer .input-group-addon {
 }
 .btn-primary {
     width: 100%;
+    color: #fff;
+    background-color: #007bff;
 }
 /* услуги */
 .bg-services {
@@ -298,6 +305,29 @@ footer .input-group-addon {
 
 
 
+.fa-2x.fa-map-marker::before {
+content: url('../things/location-2x.svg');
+display: inline-block;
+height: 32px;
+width: 32px;
+padding-top: 5px;
+}
+
+.fa-2x.fa-phone-volume::before {
+content: url('../things/phone-2x.svg');
+display: inline-block;
+height: 36px;
+width: 32px;
+padding-top: 5px;
+}
+
+.fa-2x.fa-envelope::before {
+content: url('../things/email-2x.svg');
+display: inline-block;
+height: 36px;
+width: 32px;
+padding-top: 5px;
+}
 
 
 
