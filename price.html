@@ -6,13 +6,41 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/critical.css">
+    <link rel="preload" href="css/style.css" as="style" onload="this.rel='stylesheet'">
+
     <link rel="icon" href="https://sombra-industrial.ru/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="https://sombra-industrial.ru/favicon.ico" type="image/x-icon">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Прайс-лист на основные виды работ по промышленной безопасности, разработке ПЛА, сбору исполнительной документации и работам связанным со вступленим в СРО"/>
     <meta name="theme-color" content="#224446">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="things/apple-icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="things/apple-icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="things/apple-icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="things/apple-icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="things/apple-icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="things/apple-icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="things/apple-icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="things/apple-icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="things/apple-icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="things/apple-icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="things/apple-icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="things/apple-icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="things/apple-icons/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="things/apple-icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+<!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NNLCQV2');</script>
+<!-- End Google Tag Manager -->
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
@@ -24,7 +52,7 @@
                 <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
                  <li class="nav-item"><a class="nav-link" href="index.html#cardlist">Услуги</a></li>
 
-                 <li class="nav-item active"><a class="nav-link" href="#">Прайс-лист <span class="sr-only">(current)</span></a></li>
+                 <li class="nav-item active"><a class="nav-link" href="#">Прайс-лист <span class="sr-only"></span></a></li>
                  <li class="nav-item"><a class="nav-link" href="downloads.html">Downloads</a></li>
                  <!-- <li class="nav-item active"><a class="nav-link" href="#">Контакты <span class="sr-only">(current)</span></a></li> -->
                  <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
@@ -44,7 +72,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
+            <tr class="table-bg-gray">
                 <th scope="row">Регистрация ОПО</th>
                 <td>25000</td>
                 <td>30 дней</td>
@@ -207,7 +235,7 @@
                         <li>
                             <div class="row">
                                 <div class="col-1"><i class="far fa-envelope"></i></div>
-                                    <div class="col-10">
+                                <div class="col-10">
                                     <h6 class="font-weight-bold mb-0">Have any questions?</h6>
                                     <p><a href="#">info@sombra-industrial.ru</a></p>
                                 </div>
@@ -218,7 +246,7 @@
                                 <div class="col-1"><i class="fas fa-phone-volume"></i></div>
                                 <div class="col-10">
                                     <h6 class="font-weight-bold mb-0">Phone:</h6>
-                                    <p><a href="#">+7 (902) 930-89-34</a></p>
+                                    <p><a href="#">+7 (902) 930-89-47</a></p>
                                 </div>
                             </div>
                         </li>
@@ -229,7 +257,7 @@
                     <ul class="f-address">
                         <li>
                             <div class="row">
-                                <div class="col-1"><i class="fab fa-twitter"></i></div>
+                                <div class="col-1"><i class="fab fa-twitter-blue"></i></div>
                                 <div class="col-10">
                                     <p class="mb-0"><a href="#">@rostechnadzor </a>Ростехнадзор выдал «Шереметьево» заключение о  соответствии требованиям  проектной документации реконструированного  Терминала С (этап 1) </p>
                                     <label>7 Nov</label>
@@ -238,6 +266,7 @@
                         </li>
                     </ul>
                 </div>
+
                 <div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
                     <h5 class="mb-4 font-weight-bold">LATEST UPDATES</h5>
                     <ul class="recent-post">
@@ -262,16 +291,16 @@
                             <button type="submit" class="input-group-addon" id="basic-addon2" aria-label="submit"><i class="fas fa-check"></i></button>
                         </form>
                     <ul class="social-pet mt-4 text-center">
-                        <li><a href="#" title="vk"><i class="fab fa-vk"></i></a></li>
-                        <li><a href="#" title="twitter"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#" title="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
-                        <li><a href="#" title="instagram"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://vk.com/sombraindustrial" title="vk"><i class="fab fa-vk"></i></a></li>
+                        <li><a href="https://twitter.com/batukaraev1" title="twitter"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://wa.me/79039308947" title="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+                        <li><a href="https://instagram.com/sombra_ind" title="instagram"><i class="fab fa-instagram"></i></a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
-<!-- Copyright -->
+    <!-- Copyright -->
     <section class="copyright">
         <h2 class="d-none">Copyright</h2>
         <div class="container">
@@ -288,42 +317,10 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script async src="https://kit.fontawesome.com/b78d799189.js" crossorigin="anonymous"></script>
-<!-- Yandex.Metrika counter -->
-    <script type="text/javascript" >
-        (function (d, w, c) {
-            (w[c] = w[c] || []).push(function() {
-                try {
-                    w.yaCounter56592421 = new Ya.Metrika({
-                        id:56592421,
-                        clickmap:true,
-                        trackLinks:true,
-                        accurateTrackBounce:true
-                    });
-                } catch(e) { }
-            });
 
-            var n = d.getElementsByTagName("script")[0],
-                s = d.createElement("script"),
-                f = function () { n.parentNode.insertBefore(s, n); };
-            s.type = "text/javascript";
-            s.async = true;
-            s.src = "https://mc.yandex.ru/metrika/watch.js";
-
-            if (w.opera == "[object Opera]") {
-                d.addEventListener("DOMContentLoaded", f, false);
-            } else { f(); }
-        })(document, window, "yandex_metrika_callbacks");
-    </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/56592421" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-<!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-154670239-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-154670239-1');
-    </script>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NNLCQV2"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 </body>
 </html>
