@@ -338,7 +338,7 @@
         </div>
     </footer>
     <!-- Copyright -->
-    <section class="copyright animated footer-left">
+    <section class="copyright">
         <h2 class="d-none">Copyright</h2>
         <div class="container">
             <div class="row">
@@ -394,6 +394,17 @@
                 var topofWindow = $(window).scrollTop();
                 if (imagePos < topofWindow+1100) {
                     $(this).addClass("slideInRight");
+                }
+            });
+        });
+    </script>
+    <script>
+        $(window).scroll(function(){
+            $(".footer-right").each(function() {
+                var imagePos = $(this).offset().top;
+                var topofWindow = $(window).scrollTop();
+                if (imagePos < topofWindow+1100) {
+                    $(this).addClass("slideInUp");
                 }
             });
         });
