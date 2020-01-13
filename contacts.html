@@ -10,6 +10,7 @@
 
     <link rel="icon" href="https://sombra-industrial.ru/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="https://sombra-industrial.ru/favicon.ico" type="image/x-icon">
+    <link rel="preload" href="css/animate.css" as="style" onload="this.rel='stylesheet'">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Раздел контактов нашей организации"/>
@@ -47,7 +48,7 @@
 
 <body>
     <div class="bg-contacts">
-        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-transparent">
+        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-transparent animated bounceInDown">
             <!-- <a class="navbar-brand" href="#">Sombra</a> -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span></button>
@@ -61,28 +62,31 @@
                 </ul>
             </div>
         </nav>
-
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-sm-12">
-                    <a href="index.html"><img class="main-logo-contacts" src="things/sombra-industrial.png" alt="Sombra Industrial"></a>
-                </div>
-            </div>
-            <h1 class="d-none">Промышленная безопасность</h1>
-        </div>
     </div>
+    <div class="container text-center relative">
+        <div class="row contacts-first-display">
+            <div class="col-sm-12">
+                <a href="index.html"><img class="main-logo-contacts animated infinite flip delay-2s slow" src="things/sombra-industrial.png" alt="Sombra Industrial"></a>
+            </div>
+        </div>
+        <h1 class="d-none">Промышленная безопасность</h1>
+    </div>
+
 <main>
     <div class="container">
 <!--Section: Contact v.2-->
         <section class="mb-4">
     <!--Section heading-->
+    <div class="">
+
+
             <h2 class="h1-responsive font-weight-bold text-center my-4 black">Contact us</h2>
     <!--Section description-->
             <p class="text-center w-responsive mx-auto mb-5 black">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
                 a matter of hours to help you.</p>
             <div class="row">
     <!--Grid column-->
-                <div class="col-md-9 mb-md-0 mb-5">
+                <div class="col-md-9 mb-md-0 mb-5 wow slideInLeft">
                     <form id="contact-form" name="contact-form" action="https://formspree.io/xoqvowyo" method="POST">
         <!--Grid row-->
                         <div class="row">
@@ -134,7 +138,7 @@
                 </div>
     <!--Grid column-->
     <!--Grid column-->
-                <div class="col-md-3 text-center black">
+                <div class="col-md-3 text-center black wow slideInRight">
                     <ul class="list-unstyled mb-0">
                         <li>
                             <i class="fas fa-map-marker fa-2x"></i>
@@ -160,7 +164,7 @@
     <footer class="pt-5 pb-4" id="contact">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
+                <div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4 wow slideInRight">
                     <h5 class="mb-4 font-weight-bold">ABOUT US</h5>
                     <p class="mb-4">Ordo ab chao</p>
                     <ul class="f-address">
@@ -193,7 +197,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
+                <div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4 animated wow slideInRight">
                     <h5 class="mb-4 font-weight-bold">FRESH TWEETS</h5>
                     <ul class="f-address">
                         <li>
@@ -208,7 +212,7 @@
                     </ul>
                 </div>
 
-                <div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
+                <div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4 animated wow slideInLeft">
                     <h5 class="mb-4 font-weight-bold">LATEST UPDATES</h5>
                     <ul class="recent-post">
                         <li>
@@ -225,7 +229,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
+                <div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4 animated wow slideInRight">
                     <h5 class="mb-4 font-weight-bold">CONNECT WITH US</h5>
                         <form class="input-group" action="https://formspree.io/xoqvowyo" method="POST">
                             <input type="text" class="form-control" placeholder="Your Email Address" name="_replyto" aria-label="email address">
@@ -258,6 +262,10 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NNLCQV2"
