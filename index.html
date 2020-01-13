@@ -11,6 +11,8 @@
 
     <link rel="preload" href="css/style.css" as="style" onload="this.rel='stylesheet'">
 
+    <link rel="preload" href="css/animate.min.css" as="style" onload="this.rel='stylesheet'">
+
     <link rel="icon" href="https://sombra-industrial.ru/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="https://sombra-industrial.ru/favicon.ico" type="image/x-icon">
 
@@ -73,12 +75,12 @@
                       <a href="#">
                           <picture>
                                 <source srcset="things/sombra-industrial.webp" type="image/webp">
-                                <img class="" src="things/sombra-industrial.png" alt="Sombra Industrial">
+                                <img class="animated infinite flip delay-2s slow" src="things/sombra-industrial.png" alt="Sombra Industrial">
                           </picture>
                       </a>
                 </div>
             </div>
-            <div class="row d-none d-sm-block main-first-display main-moto">
+            <div class="row d-none d-lg-block main-first-display main-moto">
                 <div class="col-sm-12">
                       <p class="moto">промышленная безопасность в ваших руках</p>
                 </div>
@@ -193,41 +195,51 @@
     <section class="main text-center" id="cardlist">
         <h2 class="d-none">Услуги</h2>
         <div class="container-fluid">
-            <div class="prombez cards">
-                <h3 class="moto card-moto">Промышленная безопасность</h3>
-                <p class="description">- Регистрация ОПО<br>
-                - Положение о производственном контроле<br>
-                - Подготовка документов к лицензированию и т.д</p>
-                <a class="btn btn-link white" href="services-prombez.html">узнать больше</a>
+            <div class="prombez cards ">
+                <div class="animated mov-left">
+                    <h3 class="moto card-moto">Промышленная безопасность</h3>
+                    <p class="description">- Регистрация ОПО<br>
+                    - Положение о производственном контроле<br>
+                    - Подготовка документов к лицензированию и т.д</p>
+                    <a class="btn btn-link white" href="services-prombez.html">узнать больше</a>
+                </div>
             </div>
             <div class="pla cards">
-                <h3 class="moto card-moto">Разработка ПЛА</h3>
-                <p class="description">
-                - Разработка и согласование ПЛА (ПЛМЛА)<br>
-                - Разработка ПЛАС и др.</p>
-                <a class="btn btn-link white" href="services-pla.html">узнать больше</a>
+                <div class="animated mov-left">
+                    <h3 class="moto card-moto">Разработка ПЛА</h3>
+                    <p class="description">
+                    - Разработка и согласование ПЛА (ПЛМЛА)<br>
+                    - Разработка ПЛАС и др.</p>
+                    <a class="btn btn-link white" href="services-pla.html">узнать больше</a>
+                </div>
             </div>
             <div class="sro cards">
-                <h3 class="moto  card-moto">СРО и НРС</h3>
-                <p class="description">
-                - Вступление в СРО<br>
-                - Внесение специалистов в реестр НРС, НОСТРОЙ и т.д.</p>
-                <a class="btn btn-link white" href="services-sro.html">узнать больше</a>
+                <div class="animated mov-left">
+                    <h3 class="moto  card-moto">СРО и НРС</h3>
+                    <p class="description">
+                    - Вступление в СРО<br>
+                    - Внесение специалистов в реестр НРС, НОСТРОЙ и т.д.</p>
+                    <a class="btn btn-link white" href="services-sro.html">узнать больше</a>
+                </div>
             </div>
             <div class="project cards">
-                <h3 class="moto card-moto">Разработка проектной документации</h3>
-                <p class="description">
-                - Газоснабжение<br>
-                - Тепломеханическая часть<br>
-                - Отопление и вентиляция и пр.</p>
-                <a class="btn btn-link white" href="services-project.html">узнать больше</a>
+                <div class="animated mov-left">
+                    <h3 class="moto card-moto">Разработка проектной документации</h3>
+                    <p class="description">
+                    - Газоснабжение<br>
+                    - Тепломеханическая часть<br>
+                    - Отопление и вентиляция и пр.</p>
+                    <a class="btn btn-link white" href="services-project.html">узнать больше</a>
+                </div>
             </div>
             <div class="executed cards">
-                <h3 class="moto card-moto">Исполнительная документация</h3>
-                <p class="description">
-                - Разработка исполнительно-технической<br>
-                документации на строительство</p>
-                <a class="btn btn-link white" href="services-execut.html">узнать больше</a>
+                <div class="animated mov-left">
+                    <h3 class="moto card-moto">Исполнительная документация</h3>
+                    <p class="description">
+                    - Разработка исполнительно-технической<br>
+                    документации на строительство</p>
+                    <a class="btn btn-link white" href="services-execut.html">узнать больше</a>
+                </div>
             </div>
         </div>
     </section>
@@ -236,8 +248,8 @@
         <h2 class="d-none">Другие наши проекты</h2>
         <p class="black text-center">Возможно, Вас так же заинтересуют другие проекты:</p>
         <ul class="partners">
-            <li><a href="develop.html"><img src="things/sombra-engineering.jpg" alt="Sombra engineering"></a></li>
-            <li><a href="develop.html"><img src="things/sombra-design.jpg" alt="Sombra design"></a></li>
+            <li class="animated mov-in"><a href="develop.html"><img src="things/sombra-engineering.jpg" alt="Sombra engineering"></a></li>
+            <li class="animated mov-in"><a href="develop.html"><img src="things/sombra-design.jpg" alt="Sombra design"></a></li>
         </ul>
     </section>
 <!-- Footer -->
@@ -342,6 +354,28 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        $(window).scroll(function(){
+            $(".mov-left").each(function() {
+                var imagePos = $(this).offset().top;
+                var topofWindow = $(window).scrollTop();
+                if (imagePos < topofWindow+800) {
+                    $(this).addClass("slideInLeft");
+                }
+            });
+        });
+    </script>
+    <script>
+        $(window).scroll(function(){
+            $(".mov-in").each(function() {
+                var imagePos = $(this).offset().top;
+                var topofWindow = $(window).scrollTop();
+                if (imagePos < topofWindow+1000) {
+                    $(this).addClass("zoomIn");
+                }
+            });
+        });
+    </script>
 
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NNLCQV2"
