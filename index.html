@@ -52,7 +52,7 @@
 
 <body>
     <div class="bg">
-        <nav class="navbar navbar-expand-lg navbar navbar-dark  bg-transparent">
+        <nav class="navbar navbar-expand-lg navbar navbar-dark  bg-transparent animated bounceInDown">
             <!-- <a class="navbar-brand" href="#">Sombra</a> -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span></button>
@@ -80,17 +80,17 @@
                       </a>
                 </div>
             </div>
-            <div class="row d-none d-lg-block main-first-display main-moto">
+            <div class="row d-none d-lg-block main-first-display main-moto animated zoomIn">
                 <div class="col-sm-12">
                       <p class="moto">промышленная безопасность в ваших руках</p>
                 </div>
             </div>
-            <div class="row d-none d-sm-block main-first-display main-btn">
+            <div class="row d-none d-sm-block main-first-display main-btn animated zoomIn">
                 <div class="col-sm-12">
                       <a class="btn btn-link  white" href="#cardlist">узнать больше</a>
                 </div>
             </div>
-            <div class="row main-first-display arrow">
+            <div class="row main-first-display arrow animated bounceInUp">
                 <div class="col-sm-12">
                       <picture>
                             <source srcset="things/arrow.webp" type="image/webp">
@@ -103,7 +103,7 @@
 
     <section>
         <h2 class="d-none">Информация</h2>
-        <div class="container-fluid text-center black">
+        <div class="container-fluid text-center black animated mov-in">
             <p class="first-row"> Промышленная безопасность в Российской Федерации регулируется следующими нормативными документами:</p>
             <p>- Федеральный закон от 21.07.1997 N 116-ФЗ (ред. от 29.07.2018) "О промышленной безопасности опасных производственных объектов"<br>
             - Федеральные нормы и правила в области промышленной безопасности "Общие правила взрывобезопасности для взрывопожароопасных химических, нефтехимических и нефтеперерабатывающих производств"<br>
@@ -115,7 +115,7 @@
 
     <section>
         <h2 class="d-none">Партнеры</h2>
-        <div class="container-fluid d-none d-sm-block">
+        <div class="container-fluid d-none d-sm-block animated mov-in">
             <ul class="partners">
                 <li>
                     <picture>
@@ -256,7 +256,7 @@
     <footer class="pt-5 pb-4" id="contact">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
+                <div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4 animated footer-left">
                     <h5 class="mb-4 font-weight-bold">ABOUT US</h5>
                     <p class="mb-4">Ordo ab chao</p>
                     <ul class="f-address">
@@ -289,7 +289,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
+                <div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4 animated footer-right">
                     <h5 class="mb-4 font-weight-bold">FRESH TWEETS</h5>
                     <ul class="f-address">
                         <li>
@@ -304,7 +304,7 @@
                     </ul>
                 </div>
 
-                <div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
+                <div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4 animated footer-left">
                     <h5 class="mb-4 font-weight-bold">LATEST UPDATES</h5>
                     <ul class="recent-post">
                         <li>
@@ -321,7 +321,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
+                <div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4 animated footer-right">
                     <h5 class="mb-4 font-weight-bold">CONNECT WITH US</h5>
                         <form class="input-group" action="https://formspree.io/xoqvowyo" method="POST">
                             <input type="text" class="form-control" placeholder="Your Email Address" name="_replyto" aria-label="email address">
@@ -338,7 +338,7 @@
         </div>
     </footer>
     <!-- Copyright -->
-    <section class="copyright">
+    <section class="copyright animated footer-left">
         <h2 class="d-none">Copyright</h2>
         <div class="container">
             <div class="row">
@@ -372,6 +372,28 @@
                 var topofWindow = $(window).scrollTop();
                 if (imagePos < topofWindow+1000) {
                     $(this).addClass("zoomIn");
+                }
+            });
+        });
+    </script>
+    <script>
+        $(window).scroll(function(){
+            $(".footer-left").each(function() {
+                var imagePos = $(this).offset().top;
+                var topofWindow = $(window).scrollTop();
+                if (imagePos < topofWindow+1000) {
+                    $(this).addClass("slideInLeft");
+                }
+            });
+        });
+    </script>
+    <script>
+        $(window).scroll(function(){
+            $(".footer-right").each(function() {
+                var imagePos = $(this).offset().top;
+                var topofWindow = $(window).scrollTop();
+                if (imagePos < topofWindow+1100) {
+                    $(this).addClass("slideInRight");
                 }
             });
         });
