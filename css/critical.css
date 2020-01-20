@@ -103,10 +103,17 @@ body {
     position: absolute;
     /* border: solid red; */
 }
-.main-first-display.main-logo {
-    top: -90vh;
-    left:50%;
-    margin-left: -136px;
+@media (min-width: 1px) {
+    .main-first-display.main-logo {
+        top: -70vh;
+        left:50%;
+        margin-left: -136px;
+    }
+}
+@media (min-width: 991px) {
+    .main-first-display.main-logo {
+        top: -90vh;
+    }
 }
 .main-first-display.main-moto {
     top: -60vh;
