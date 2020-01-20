@@ -348,3 +348,15 @@ display: inline-block;
 height: 18px;
 width: 16px;
 padding-top: 5px;
+}
+.fa-facebook::before {
+content: url('../things/facebook.svg');
+display: inline-block;
+height: 18px;
+width: 16px;
+padding-top: 5px;
+}
+
+th {
+    width: 33%;
+}
