@@ -6,6 +6,22 @@ body, html {
 li {
     list-style: none;
 }
+@media (min-width: 576px) {
+    .services-font {
+        font-size: 1.2rem;
+    }
+}
+
+
+.notice-bg {
+    background-color: rgb(224, 255, 255);
+    border-radius: 20px;
+}
+
+.notice-bg-red {
+    background-color: rgba(255, 51, 51, 0.5);
+    border-radius: 20px;
+}
 
 .webp .bg {
     background-image: url('../things/environment.webp');
