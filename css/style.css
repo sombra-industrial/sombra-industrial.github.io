@@ -233,6 +233,12 @@ footer .input-group-addon {
     height: 50vh;
 }
 /* разделитель */
+@media (min-width: 1200px) {
+    .razdelitel{
+        margin:45px auto 60px !important;
+    }
+}
+
 .razdelitel{
  position: relative;
  display: block;
