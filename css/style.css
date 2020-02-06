@@ -12,7 +12,6 @@ li {
     }
 }
 
-
 .notice-bg {
     background-color: rgb(224, 255, 255);
     border-radius: 20px;
@@ -233,7 +232,7 @@ footer .input-group-addon {
     height: 50vh;
 }
 /* разделитель */
-@media (min-width: 1200px) {
+@media (min-width: 987px) {
     .razdelitel{
         margin:45px auto 60px !important;
     }
