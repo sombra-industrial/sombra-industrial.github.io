@@ -56,21 +56,24 @@ li {
     margin-top: 30px;
 }
 .partners {
-    /* display: -webkit-box; */
+    display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    /* -webkit-flex: 1 1 auto; */
+
     flex-direction: row;
+
     -webkit-flex-wrap: wrap;
     -moz-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     -o-flex-wrap: wrap;
     flex-wrap: wrap;
-    /* -webkit-box-pack: center; */
+
+    -webkit-box-pack: center;
     -webkit-justify-content: center;
     justify-content: center;
+
     align-items: center;
 }
 ul.partners {
@@ -388,4 +391,11 @@ padding-top: 5px;
 
 th {
     width: 33%;
+}
+
+.calculation-size {
+    max-width: 1200px;
+}
+.input-group-text {
+    width: 100%;
 }
