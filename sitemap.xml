@@ -1,62 +1,316 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+<!-- created with www.majento.ru -->
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
-  <loc>https://sombra-industrial.ru/</loc>
-  <lastmod>2019-12-06T13:36:56+00:00</lastmod>
-  <priority>1.00</priority>
+	<loc>https://sombra-industrial.ru/</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>1.0</priority>
+	<changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>https://sombra-industrial.ru/price.html</loc>
-  <lastmod>2019-12-06T13:36:56+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://sombra-industrial.ru/calculation.html</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.9</priority>
+	<changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>https://sombra-industrial.ru/downloads.html</loc>
-  <lastmod>2019-12-06T13:36:56+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://sombra-industrial.ru/develop.html</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.9</priority>
+	<changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>https://sombra-industrial.ru/contacts.html</loc>
-  <lastmod>2019-12-06T13:36:56+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://sombra-industrial.ru/downloads.html</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.9</priority>
+	<changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>https://sombra-industrial.ru/services-prombez.html</loc>
-  <lastmod>2019-12-06T13:36:56+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://sombra-industrial.ru/index.html</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.9</priority>
+	<changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>https://sombra-industrial.ru/services-pla.html</loc>
-  <lastmod>2019-12-06T13:36:56+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://sombra-industrial.ru/price.html</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.9</priority>
+	<changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>https://sombra-industrial.ru/services-sro.html</loc>
-  <lastmod>2019-12-06T13:36:56+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://sombra-industrial.ru/services-execut.html</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.9</priority>
+	<changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>https://sombra-industrial.ru/services-project.html</loc>
-  <lastmod>2019-12-06T13:36:56+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://sombra-industrial.ru/services-pla</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.9</priority>
+	<changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>https://sombra-industrial.ru/services-execut.html</loc>
-  <lastmod>2019-12-06T13:36:56+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://sombra-industrial.ru/services-pla.html</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.9</priority>
+	<changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>https://sombra-industrial.ru/index.html</loc>
-  <lastmod>2019-12-06T13:36:56+00:00</lastmod>
-  <priority>0.64</priority>
+	<loc>https://sombra-industrial.ru/services-project.html</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.9</priority>
+	<changefreq>weekly</changefreq>
 </url>
-
-
+<url>
+	<loc>https://sombra-industrial.ru/services-prombez.html</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.9</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://sombra-industrial.ru/services-sro.html</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.9</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://sombra-industrial.ru/things/rvt/Rabo_G100.rfa</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.7</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://sombra-industrial.ru/things/rvt/Rabo_G160.rfa</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.7</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://sombra-industrial.ru/things/rvt/Rabo_G250.rfa</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.7</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://sombra-industrial.ru/things/rvt/Rabo_G400_DN100.rfa</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.7</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://sombra-industrial.ru/things/rvt/Rabo_G400_DN150.rfa</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.7</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://sombra-industrial.ru/things/rvt/Rabo_G65.rfa</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.7</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://sombra-industrial.ru/things/rvt/TRZ_DN100_lr.rfa</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.7</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://sombra-industrial.ru/things/rvt/TRZ_DN100_rl.rfa</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.7</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://sombra-industrial.ru/things/rvt/TRZ_DN150_lr.rfa</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.7</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://sombra-industrial.ru/things/rvt/TRZ_DN150_rl.rfa</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.7</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://sombra-industrial.ru/things/rvt/TRZ_DN80_lr.rfa</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.7</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://sombra-industrial.ru/things/rvt/TRZ_DN80_rl.rfa</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.7</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://sombra-industrial.ru/things/rvt/ВК_G10.rfa</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.7</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://sombra-industrial.ru/things/rvt/ВК_G16.rfa</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.7</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://sombra-industrial.ru/things/rvt/ВК_G25.rfa</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.7</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://sombra-industrial.ru/things/rvt/ВК_G6.rfa</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.7</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://sombra-industrial.ru/things/rvt/ВН1-1-2Н-3.rfa</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.7</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://sombra-industrial.ru/things/rvt/ВН1-1-4Н-3.rfa</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.7</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://sombra-industrial.ru/things/rvt/ВН1-2Н-4.rfa</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.7</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://sombra-industrial.ru/things/rvt/ВН1Н-4.rfa</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.7</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://sombra-industrial.ru/things/rvt/ВН2Н-6.rfa</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.7</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://sombra-industrial.ru/things/rvt/ВН3-4Н-4.rfa</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.7</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://sombra-industrial.ru/things/rvt/ВН3Н-6.rfa</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.7</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://sombra-industrial.ru/things/rvt/ВН4Н-6.rfa</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.7</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://sombra-industrial.ru/things/rvt/ВН6Н-1.rfa</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.7</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://sombra-industrial.ru/things/rvt/КТЗ-015-00.rfa</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.7</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://sombra-industrial.ru/things/rvt/КТЗ-015-01.rfa</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.7</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://sombra-industrial.ru/things/rvt/КТЗ-020-00.rfa</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.7</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://sombra-industrial.ru/things/rvt/КТЗ-020-01.rfa</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.7</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://sombra-industrial.ru/things/rvt/КТЗ-025-00.rfa</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.7</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://sombra-industrial.ru/things/rvt/КТЗ-025-01.rfa</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.7</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://sombra-industrial.ru/things/rvt/КТЗ-032-00.rfa</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.7</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://sombra-industrial.ru/things/rvt/КТЗ-032-01.rfa</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.7</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://sombra-industrial.ru/things/rvt/КТЗ-040-00.rfa</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.7</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://sombra-industrial.ru/things/rvt/КТЗ-040-01.rfa</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.7</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://sombra-industrial.ru/things/rvt/КТЗ-050-00.rfa</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.7</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://sombra-industrial.ru/things/rvt/КТЗ-050-01.rfa</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.7</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://sombra-industrial.ru/things/rvt/КТЗ-050-02.rfa</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.7</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://sombra-industrial.ru/things/rvt/КТЗ-100-02.rfa</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.7</priority>
+	<changefreq>weekly</changefreq>
+</url>
+<url>
+	<loc>https://sombra-industrial.ru/things/rvt/КТЗ-150-02.rfa</loc>
+	<lastmod>2020-02-13T14:52:58+03:00</lastmod>
+	<priority>0.7</priority>
+	<changefreq>weekly</changefreq>
+</url>
 </urlset>
