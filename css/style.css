@@ -400,6 +400,10 @@ th {
     width: 100%;
 }
 
-.navbar {
+.row.main-first-display.main-logo {
+    z-index: 0;
+}
+
+.navbar.navbar-expand-lg.navbar-dark.bg-transparent {
     z-index: 1;
 }
