@@ -407,3 +407,11 @@ th {
 .navbar.navbar-expand-lg.navbar-dark.bg-transparent {
     z-index: 1;
 }
+
+/* .input-group-text {
+    word-wrap: break-word;
+} */
+
+.input-group-text {
+    white-space: normal;
+}
