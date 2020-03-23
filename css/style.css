@@ -415,3 +415,8 @@ th {
 .input-group-text {
     white-space: normal;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
