@@ -25,7 +25,11 @@ body {
   width: auto;
   background-position: center;
   background-repeat: no-repeat;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size:cover;
   background-size: cover;
+  background-color: grey;
 }
 .d-none {
   display: none !important;
@@ -612,11 +616,15 @@ dl {
     background-image: url('../things/contacts.webp');
 }
 .no-webp .bg-contacts {
-    background-image: url('../things/contacts.jpg')
+    background-image: url('../things/contacts.jpg');
 }
 .bg-contacts {
     background-position: center;
     background-repeat: no-repeat;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size:cover;
+    background-size: cover;
     width: 100%;
     height: 50vh;
 }
