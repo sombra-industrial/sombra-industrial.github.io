@@ -68,353 +68,703 @@
 <main class="black">
     <div class="container text-center calculation-size">
 
+
         <div class="razdelitel"><div></div></div>
         <h1 class="d-none">Онлайн-расчеты систем тепло-газоснабжения</h1>
-        <h4 class="pb-3">Калькулятор расхода газа котлом / теплогенератором</h4>
 
-        <form name="gas_consumption" method="post">
-            <div class="input-group mb-3 mt-3">
-                <div class="input-group-prepend col-12 col-md-4 mb-3">
-                    <label class="input-group-text" for="hoc">Удельная теплота сгорания топлива</label>
+        <div class="accordion black" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link black" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Калькулятор расхода газа котлом / теплогенератором
+                    </button>
+                  </h5>
                 </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
 
-                <div class="col-6 col-md-4 mb-3">
-                     <input class="form-control" type="text" value="8000" id="hoc" title="Теплота сгорания топлива природного газа, как правило, принимается 8000 ккал/м3">
-                </div>
 
-                <div class="col-6 col-md-4 mb-3">
-                    <select class="custom-select" id="hoc_dim">
-                        <option selected value="0.0041868">ккал/нм³</option>
-                        <option value="4186.8">Гкал/нм³</option>
-                        <option value="0.0036">Вт•ч/нм³</option>
-                        <option value="3.6">кВт•ч/нм³</option>
-                        <option value="3600">МВт•ч/нм³</option>
-                        <option value="0.000001">Дж/нм³</option>
-                        <option value="0.001">кДж/нм³</option>
-                        <option value="1">МДж/нм³</option>
-                        <option value="1000">ГДж/нм³</option>
-                        <option value="0.000001073">Дж/стм³</option>
-                        <option value="0.001073">кДж/стм³</option>
-                        <option value="1.073">МДж/стм³</option>
-                        <option value="1073">ГДж/стм³</option>
-                    </select>
-                </div>
-            </div>
+                        <form name="gas_consumption" method="post">
+                            <div class="input-group mb-3 mt-3">
+                                <div class="input-group-prepend col-12 col-md-4 mb-3">
+                                    <label class="input-group-text" for="hoc">Удельная теплота сгорания топлива</label>
+                                </div>
 
-            <div class="input-group mb-3 mt-3">
-                <div class="input-group-prepend col-12 col-md-4 mb-3">
-                    <label class="input-group-text" for="power">Мощность теплогенератора</label>
-                </div>
+                                <div class="col-6 col-md-4 mb-3">
+                                     <input class="form-control" type="text" value="8000" id="hoc" title="Теплота сгорания топлива природного газа, как правило, принимается 8000 ккал/м3">
+                                </div>
 
-                <div class="col-6 col-md-4 mb-3">
-                     <input class="form-control" type="text" value="24" id="power" title="Максимальная потребляющая мощность теплогенератора, указывается в руководстве по эксплуатации">
-                </div>
+                                <div class="col-6 col-md-4 mb-3">
+                                    <select class="custom-select" id="hoc_dim">
+                                        <option selected value="0.0041868">ккал/нм³</option>
+                                        <option value="4186.8">Гкал/нм³</option>
+                                        <option value="0.0036">Вт•ч/нм³</option>
+                                        <option value="3.6">кВт•ч/нм³</option>
+                                        <option value="3600">МВт•ч/нм³</option>
+                                        <option value="0.000001">Дж/нм³</option>
+                                        <option value="0.001">кДж/нм³</option>
+                                        <option value="1">МДж/нм³</option>
+                                        <option value="1000">ГДж/нм³</option>
+                                        <option value="0.000001073">Дж/стм³</option>
+                                        <option value="0.001073">кДж/стм³</option>
+                                        <option value="1.073">МДж/стм³</option>
+                                        <option value="1073">ГДж/стм³</option>
+                                    </select>
+                                </div>
+                            </div>
 
-                <div class="col-6 col-md-4 mb-3">
-                    <select class="custom-select" id="power_dim">
-                        <option value="0.0041868">ккал/ч</option>
-                        <option value="4186.8">Гкал/ч</option>
-                        <option value="0.0036">Вт</option>
-                        <option value="3.6" selected>кВт</option>
-                        <option value="3600">МВт</option>
-                        <option value="0.000001">Дж/ч</option>
-                        <option value="0.001">кДж/ч</option>
-                        <option value="1">МДж/ч</option>
-                        <option value="1000">ГДж/ч</option>
-                    </select>
-                </div>
-            </div>
+                            <div class="input-group mb-3 mt-3">
+                                <div class="input-group-prepend col-12 col-md-4 mb-3">
+                                    <label class="input-group-text" for="power">Мощность теплогенератора</label>
+                                </div>
 
-            <div class="input-group mb-3 mt-3">
-                <div class="input-group-prepend col-6 col-md-4 mb-3">
-                    <label class="input-group-text" for="efficiency">КПД, η, %</label>
-                </div>
+                                <div class="col-6 col-md-4 mb-3">
+                                     <input class="form-control" type="text" value="24" id="power" title="Максимальная потребляющая мощность теплогенератора, указывается в руководстве по эксплуатации">
+                                </div>
 
-                <div class="col-6 col-md-4 mb-3">
-                     <input class="form-control" type="text" value="80" id="efficiency" title="Коэффициент полезного действия указан в руководстве по эксплуатации или паспорте">
-                </div>
-            </div>
+                                <div class="col-6 col-md-4 mb-3">
+                                    <select class="custom-select" id="power_dim">
+                                        <option value="0.0041868">ккал/ч</option>
+                                        <option value="4186.8">Гкал/ч</option>
+                                        <option value="0.0036">Вт</option>
+                                        <option value="3.6" selected>кВт</option>
+                                        <option value="3600">МВт</option>
+                                        <option value="0.000001">Дж/ч</option>
+                                        <option value="0.001">кДж/ч</option>
+                                        <option value="1">МДж/ч</option>
+                                        <option value="1000">ГДж/ч</option>
+                                    </select>
+                                </div>
+                            </div>
 
-            <button onClick="calculateGasConsumption();" class="btn btn-primary col-md-12" type="button" name="button">Рассчитать</button>
+                            <div class="input-group mb-3 mt-3">
+                                <div class="input-group-prepend col-6 col-md-4 mb-3">
+                                    <label class="input-group-text" for="efficiency">КПД, η, %</label>
+                                </div>
 
-            <div class="input-group mb-3 mt-3">
-                <div class="col-12 col-md-4 mb-3">
-                    <label class="input-group-text bg-success white">Расход газа</label>
-                </div>
+                                <div class="col-6 col-md-4 mb-3">
+                                     <input class="form-control" type="text" value="80" id="efficiency" title="Коэффициент полезного действия указан в руководстве по эксплуатации или паспорте">
+                                </div>
+                            </div>
 
-                <div class="col-6 col-md-4 mb-3">
-                    <label class="input-group-text bg-light" id="result"> ? </label>
-                </div>
+                            <button onClick="calculateGasConsumption();" class="btn btn-primary col-md-12" type="button" name="button">Рассчитать</button>
 
-                <div class="col-6 col-md-4 mb-3">
-                    <select class="custom-select" id="consumpion_dim">
-                        <option value="1" selected="selected">нм³/ч</option>
-                        <option value="1.073">стм³/ч</option>
-                    </select>
-                </div>
-            </div>
-        </form>
+                            <div class="input-group mb-3 mt-3">
+                                <div class="col-12 col-md-4 mb-3">
+                                    <label class="input-group-text bg-success white">Расход газа</label>
+                                </div>
 
-        <div class="razdelitel"><div></div></div>
-        <h4 class="pb-3">Расчеты для котельных/теплогенераторных</h4>
+                                <div class="col-6 col-md-4 mb-3">
+                                    <label class="input-group-text bg-light" id="result"> ? </label>
+                                </div>
 
-        <form name="lower_grille" method="post">
-            <div class="col-12 col-md-12 mb-4 mt-3">
-                <select class="custom-select" id="boiler">
-                    <option value="0" selected="selected">Котел с закрытой камерой сгорания</option>
-                    <option value="1">Котел с открытой камерой сгорания</option>
-                </select>
-            </div>
-
-            <div class="input-group mb-3 mt-3">
-                <div class="input-group-prepend col-12 col-md-4 mb-3">
-                    <label class="input-group-text" for="power_boil">Мощность котельной</label>
-                </div>
-
-                <div class="col-6 col-md-4 mb-3">
-                     <input class="form-control" type="text" value="24" id="power_boil" title="Суммарная мощность котельной">
-                </div>
-
-                <div class="col-6 col-md-4 mb-3">
-                    <select class="custom-select" id="power_boil_dim">
-                        <option value="0.0041868">ккал/ч</option>
-                        <option value="4186.8">Гкал/ч</option>
-                        <option value="0.0036">Вт</option>
-                        <option value="3.6" selected>кВт</option>
-                        <option value="3600">МВт</option>
-                        <option value="0.000001">Дж/ч</option>
-                        <option value="0.001">кДж/ч</option>
-                        <option value="1">МДж/ч</option>
-                        <option value="1000">ГДж/ч</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="input-group mb-3 mt-3">
-                <div class="input-group-prepend col-6 col-md-4 mb-3">
-                    <label class="input-group-text" for="efficiency_boil">КПД, η, %</label>
-                </div>
-
-                <div class="col-6 col-md-4 mb-3">
-                     <input class="form-control" type="text" value="80" id="efficiency_boil" title="Коэффициент полезного действия указан в руководстве по эксплуатации или паспорте">
-                </div>
-            </div>
-
-            <div class="input-group mb-3 mt-3">
-                <div class="input-group-prepend col-12 col-md-4 mb-3">
-                    <label class="input-group-text" for="hoc_boil">Удельная теплота сгорания топлива</label>
-                </div>
-
-                <div class="col-6 col-md-4 mb-3">
-                     <input class="form-control" type="text" value="8000" id="hoc_boil" title="Теплота сгорания топлива природного газа, как правило, принимается 8000 ккал/м3">
-                </div>
-
-                <div class="col-6 col-md-4 mb-3">
-                    <select class="custom-select" id="hoc_boil_dim">
-                        <option selected value="0.0041868">ккал/нм³</option>
-                        <option value="4186.8">Гкал/нм³</option>
-                        <option value="0.0036">Вт•ч/нм³</option>
-                        <option value="3.6">кВт•ч/нм³</option>
-                        <option value="3600">МВт•ч/нм³</option>
-                        <option value="0.000001">Дж/нм³</option>
-                        <option value="0.001">кДж/нм³</option>
-                        <option value="1">МДж/нм³</option>
-                        <option value="1000">ГДж/нм³</option>
-                        <option value="0.000001073">Дж/стм³</option>
-                        <option value="0.001073">кДж/стм³</option>
-                        <option value="1.073">МДж/стм³</option>
-                        <option value="1073">ГДж/стм³</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="input-group mb-3 mt-3">
-                <div class="input-group-prepend col-6 col-md-4 mb-3">
-                    <label class="input-group-text" for="volume_boil">Объем котельной, м3</label>
-                </div>
-
-                <div class="col-6 col-md-4 mb-3">
-                     <input class="form-control" type="text" value="30" id="volume_boil" title="Пояснения излишни!">
-                </div>
-            </div>
-
-            <div class="input-group mb-3 mt-3">
-                <div class="input-group-prepend col-6 col-md-4 mb-3">
-                    <label class="input-group-text" for="air_change">Требуемый воздухообмен, крат</label>
-                </div>
-
-                <div class="col-6 col-md-4 mb-3">
-                     <input class="form-control" type="text" value="3" id="air_change" title="Воздухообмен котельной предусматривается не менее 3 крат">
-                </div>
-            </div>
-
-            <div class="input-group mb-3 mt-3">
-                <div class="input-group-prepend col-6 col-md-4 mb-3">
-                    <label class="input-group-text" for="air_velocity">Допустимая скорость воздуха в решетке, м/с</label>
-                </div>
-
-                <div class="col-6 col-md-4 mb-3">
-                     <input class="form-control" type="text" value="1" id="air_velocity" title="Скорость воздуха в решетке, как правило принимается 0,5 - 2 м/с">
-                </div>
-            </div>
-
-            <div class="input-group mb-3 mt-3">
-                <div class="input-group-prepend col-6 col-md-4 mb-3">
-                    <label class="input-group-text" for="alfa">Коэффициент избытка воздуха, α</label>
-                </div>
-
-                <div class="col-6 col-md-4 mb-3">
-                     <input class="form-control" type="text" value="3" id="alfa" title="Коэффициент избытка воздуха 1 - 1,2">
-                </div>
-
-            </div>
-
-            <button onClick="calculateBoilerRoom();" class="btn btn-primary col-md-12" type="button" name="button">Рассчитать</button>
-
-            <div class="border border-success rounded mt-3">
-                <h5 class="text-left m-3">Расчет остекления</h5>
-                <div class="input-group mb-3 mt-3">
-                    <div class="col-6 col-md-6 mb-3">
-                        <label class="input-group-text bg-success white" >Площадь остекления теплогенераторных (мощностью до 360 кВт), м2</label>
-                    </div>
-
-                    <div class="col-6 col-md-6 mb-3">
-                        <label class="input-group-text bg-light" id="gen_glass_result"> ? </label>
-                    </div>
-                </div>
-
-                <div class="input-group mb-3 mt-3">
-                    <div class="col-6 col-md-6 mb-3">
-                        <label class="input-group-text bg-success white">Площадь остекления котельных (мощностью свыше 360 кВт), так же со встроенным ГРУ, м2</label>
-                    </div>
-
-                    <div class="col-6 col-md-6 mb-3">
-                        <label class="input-group-text bg-light" id="boil_glass_result"> ? </label>
+                                <div class="col-6 col-md-4 mb-3">
+                                    <select class="custom-select" id="consumpion_dim" onClick="calculateGasConsumption();">
+                                        <option value="1" selected="selected">нм³/ч</option>
+                                        <option value="1.073">стм³/ч</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
 
-            <div class="border border-success rounded mt-3">
-                <h5 class="text-left m-3">Расход воздуха и газа</h5>
-                <div class="input-group mb-3 mt-3">
-                    <div class="col-4 col-md-4 mb-3">
-                        <label class="input-group-text bg-success white">Расход газа</label>
-                    </div>
-
-                    <div class="col-4 col-md-4 mb-3">
-                        <label class="input-group-text bg-light" id="gas_boil_result"> ? </label>
-                    </div>
-
-                    <div class="col-4 col-md-4 mb-3">
-                        <select class="custom-select" id="consumpion_boil_dim">
-                            <option value="1" selected="selected">нм³/ч</option>
-                            <option value="1.073">стм³/ч</option>
-                        </select>
-                    </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed black" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Расчеты для котельных/теплогенераторных
+                      </button>
+                    </h5>
                 </div>
 
-                <div class="input-group mb-3 mt-3">
-                    <div class="col-6 col-md-6 mb-3">
-                        <label class="input-group-text bg-success white">Расход воздуха на горение, м3/ч</label>
-                    </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <form name="lower_grille" method="post">
+                            <div class="col-12 col-md-12 mb-4 mt-3">
+                                <select class="custom-select" id="boiler">
+                                    <option value="0" selected="selected">Котел с закрытой камерой сгорания</option>
+                                    <option value="1">Котел с открытой камерой сгорания</option>
+                                </select>
+                            </div>
 
-                    <div class="col-6 col-md-6 mb-3">
-                        <label class="input-group-text bg-light" id="air_burn_result"> ? </label>
-                    </div>
-                </div>
+                            <div class="input-group mb-3 mt-3">
+                                <div class="input-group-prepend col-12 col-md-4 mb-3">
+                                    <label class="input-group-text" for="power_boil">Мощность котельной</label>
+                                </div>
 
-                <div class="input-group mb-3 mt-3">
-                    <div class="col-6 col-md-6 mb-3">
-                        <label class="input-group-text bg-success white">Расход приточного воздуха, м3/ч</label>
-                    </div>
+                                <div class="col-6 col-md-4 mb-3">
+                                     <input class="form-control" type="text" value="24" id="power_boil" title="Суммарная мощность котельной">
+                                </div>
 
-                    <div class="col-6 col-md-6 mb-3">
-                        <label class="input-group-text bg-light" id="incom_air_result"> ? </label>
-                    </div>
-                </div>
+                                <div class="col-6 col-md-4 mb-3">
+                                    <select class="custom-select" id="power_boil_dim">
+                                        <option value="0.0041868">ккал/ч</option>
+                                        <option value="4186.8">Гкал/ч</option>
+                                        <option value="0.0036">Вт</option>
+                                        <option value="3.6" selected>кВт</option>
+                                        <option value="3600">МВт</option>
+                                        <option value="0.000001">Дж/ч</option>
+                                        <option value="0.001">кДж/ч</option>
+                                        <option value="1">МДж/ч</option>
+                                        <option value="1000">ГДж/ч</option>
+                                    </select>
+                                </div>
+                            </div>
 
-                <div class="input-group mb-3 mt-3">
-                    <div class="col-6 col-md-6 mb-3">
-                        <label class="input-group-text bg-success white">Расход вытяжного воздуха, м3/ч</label>
-                    </div>
+                            <div class="input-group mb-3 mt-3">
+                                <div class="input-group-prepend col-6 col-md-4 mb-3">
+                                    <label class="input-group-text" for="efficiency_boil">КПД, η, %</label>
+                                </div>
 
-                    <div class="col-6 col-md-6 mb-3">
-                        <label class="input-group-text bg-light" id="exhaust_air_result"> ? </label>
+                                <div class="col-6 col-md-4 mb-3">
+                                     <input class="form-control" type="text" value="80" id="efficiency_boil" title="Коэффициент полезного действия указан в руководстве по эксплуатации или паспорте">
+                                </div>
+                            </div>
+
+                            <div class="input-group mb-3 mt-3">
+                                <div class="input-group-prepend col-12 col-md-4 mb-3">
+                                    <label class="input-group-text" for="hoc_boil">Удельная теплота сгорания топлива, ккал/нм³</label>
+                                </div>
+
+                                <div class="col-6 col-md-4 mb-3">
+                                     <input class="form-control" type="text" value="8000" id="hoc_boil" title="Теплота сгорания топлива природного газа, как правило, принимается 8000 ккал/м3">
+                                </div>
+
+                                <div class="col-6 col-md-4 mb-3">
+                                    <select class="custom-select" id="hoc_boil_dim">
+                                        <option selected value="0.0041868">ккал/нм³</option>
+                                        <option value="4186.8">Гкал/нм³</option>
+                                        <option value="0.0036">Вт•ч/нм³</option>
+                                        <option value="3.6">кВт•ч/нм³</option>
+                                        <option value="3600">МВт•ч/нм³</option>
+                                        <option value="0.000001">Дж/нм³</option>
+                                        <option value="0.001">кДж/нм³</option>
+                                        <option value="1">МДж/нм³</option>
+                                        <option value="1000">ГДж/нм³</option>
+                                        <option value="0.000001073">Дж/стм³</option>
+                                        <option value="0.001073">кДж/стм³</option>
+                                        <option value="1.073">МДж/стм³</option>
+                                        <option value="1073">ГДж/стм³</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="input-group mb-3 mt-3">
+                                <div class="input-group-prepend col-6 col-md-4 mb-3">
+                                    <label class="input-group-text" for="volume_boil">Объем котельной, м3</label>
+                                </div>
+
+                                <div class="col-6 col-md-4 mb-3">
+                                     <input class="form-control" type="text" value="30" id="volume_boil" title="Пояснения излишни!">
+                                </div>
+                            </div>
+
+                            <div class="input-group mb-3 mt-3">
+                                <div class="input-group-prepend col-6 col-md-4 mb-3">
+                                    <label class="input-group-text" for="air_change">Требуемый воздухообмен, крат</label>
+                                </div>
+
+                                <div class="col-6 col-md-4 mb-3">
+                                     <input class="form-control" type="text" value="3" id="air_change" title="Воздухообмен котельной предусматривается не менее 3 крат">
+                                </div>
+                            </div>
+
+                            <div class="input-group mb-3 mt-3">
+                                <div class="input-group-prepend col-6 col-md-4 mb-3">
+                                    <label class="input-group-text" for="air_velocity">Допустимая скорость воздуха в решетке, м/с</label>
+                                </div>
+
+                                <div class="col-6 col-md-4 mb-3">
+                                     <input class="form-control" type="text" value="1" id="air_velocity" title="Скорость воздуха в решетке, как правило принимается 0,5 - 2 м/с">
+                                </div>
+                            </div>
+
+                            <div class="input-group mb-3 mt-3">
+                                <div class="input-group-prepend col-6 col-md-4 mb-3">
+                                    <label class="input-group-text" for="alfa">Коэффициент избытка воздуха, α</label>
+                                </div>
+
+                                <div class="col-6 col-md-4 mb-3">
+                                     <input class="form-control" type="text" value="3" id="alfa" title="Коэффициент избытка воздуха 1 - 1,2">
+                                </div>
+
+                            </div>
+
+                            <button onClick="calculateBoilerRoom();" class="btn btn-primary col-md-12" type="button" name="button">Рассчитать</button>
+
+                            <div class="border border-success rounded mt-3">
+                                <h5 class="text-left m-3">Расчет остекления</h5>
+                                <div class="input-group mb-3 mt-3">
+                                    <div class="col-6 col-md-6 mb-3">
+                                        <label class="input-group-text bg-success white" >Площадь остекления теплогенераторных (мощностью до 360 кВт), м2</label>
+                                    </div>
+
+                                    <div class="col-6 col-md-6 mb-3">
+                                        <label class="input-group-text bg-light" id="gen_glass_result"> ? </label>
+                                    </div>
+                                </div>
+
+                                <div class="input-group mb-3 mt-3">
+                                    <div class="col-6 col-md-6 mb-3">
+                                        <label class="input-group-text bg-success white">Площадь остекления котельных (мощностью свыше 360 кВт), так же со встроенным ГРУ, м2</label>
+                                    </div>
+
+                                    <div class="col-6 col-md-6 mb-3">
+                                        <label class="input-group-text bg-light" id="boil_glass_result"> ? </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="border border-success rounded mt-3">
+                                <h5 class="text-left m-3">Расход воздуха и газа</h5>
+                                <div class="input-group mb-3 mt-3">
+                                    <div class="col-4 col-md-4 mb-3">
+                                        <label class="input-group-text bg-success white">Расход газа</label>
+                                    </div>
+
+                                    <div class="col-4 col-md-4 mb-3">
+                                        <label class="input-group-text bg-light" id="gas_boil_result"> ? </label>
+                                    </div>
+
+                                    <div class="col-4 col-md-4 mb-3">
+                                        <select class="custom-select" id="consumpion_boil_dim" onClick="calculateGasConsumption();">
+                                            <option value="1" selected="selected">нм³/ч</option>
+                                            <option value="1.073">стм³/ч</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="input-group mb-3 mt-3">
+                                    <div class="col-6 col-md-6 mb-3">
+                                        <label class="input-group-text bg-success white">Расход воздуха на горение, м3/ч</label>
+                                    </div>
+
+                                    <div class="col-6 col-md-6 mb-3">
+                                        <label class="input-group-text bg-light" id="air_burn_result"> ? </label>
+                                    </div>
+                                </div>
+
+                                <div class="input-group mb-3 mt-3">
+                                    <div class="col-6 col-md-6 mb-3">
+                                        <label class="input-group-text bg-success white">Расход приточного воздуха, м3/ч</label>
+                                    </div>
+
+                                    <div class="col-6 col-md-6 mb-3">
+                                        <label class="input-group-text bg-light" id="incom_air_result"> ? </label>
+                                    </div>
+                                </div>
+
+                                <div class="input-group mb-3 mt-3">
+                                    <div class="col-6 col-md-6 mb-3">
+                                        <label class="input-group-text bg-success white">Расход вытяжного воздуха, м3/ч</label>
+                                    </div>
+
+                                    <div class="col-6 col-md-6 mb-3">
+                                        <label class="input-group-text bg-light" id="exhaust_air_result"> ? </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="border border-success rounded mt-3">
+                                <h5 class="text-left m-3">Расчет дефлектора</h5>
+                                <div class="input-group mb-3 mt-3">
+                                    <div class="col-6 col-md-6 mb-3">
+                                        <label class="input-group-text bg-success white">Количество дефлекторов</label>
+                                    </div>
+
+                                    <div class="col-6 col-md-6 mb-3">
+                                        <select class="custom-select" id="count_deflectors" onClick="calculateBoilerRoom();">
+                                            <option value="1" selected="selected">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="input-group mb-3 mt-3">
+                                    <div class="col-6 col-md-6 mb-3">
+                                        <label class="input-group-text bg-success white">Диаметр дефлектора (номенкл.)</label>
+                                    </div>
+
+                                    <div class="col-6 col-md-6 mb-3">
+                                        <label class="input-group-text bg-light" id="real_deflect_result"> ? </label>
+                                    </div>
+                                </div>
+                                <p>*Расчет дефлектора типа УКР НИИСТ ДВК-5, при действии ветра 2 м/с, для других условий или типов воспользуйтесь <a href="things/pdf/deflectors.pdf">таблицей для подбора</a></p>
+                            </div>
+
+                            <div class="border border-success rounded mt-3 mb-3">
+                                <h5 class="text-left m-3">Расчет жалюзийной решетки</h5>
+                                <div class="input-group mb-3 mt-3">
+                                    <div class="col-6 col-md-6 mb-3">
+                                        <label class="input-group-text bg-success white">Площадь ж.р. (расчетная)</label>
+                                    </div>
+
+                                    <div class="col-6 col-md-6 mb-3">
+                                        <label class="input-group-text bg-light" id="square_grille_calc"> ? </label>
+                                    </div>
+                                </div>
+
+                                <div class="input-group mb-3 mt-3">
+                                    <div class="col-6 col-md-6 mb-3">
+                                        <label class="input-group-text bg-success white">Количество ж.р.</label>
+                                    </div>
+
+                                    <div class="col-6 col-md-6 mb-3">
+                                        <select class="custom-select" id="count_grille" onClick="calculateBoilerRoom();">
+                                            <option value="1" selected="selected">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="input-group mb-3 mt-3">
+                                    <div class="col-6 col-md-6 mb-3">
+                                        <label class="input-group-text bg-success white">Размер решетки (номенкл.)</label>
+                                    </div>
+
+                                    <div class="col-6 col-md-6 mb-3">
+                                        <label class="input-group-text bg-light" id="real_square_grille"> ? </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
 
-            <div class="border border-success rounded mt-3">
-                <h5 class="text-left m-3">Расчет дефлектора</h5>
-                <div class="input-group mb-3 mt-3">
-                    <div class="col-6 col-md-6 mb-3">
-                        <label class="input-group-text bg-success white">Количество дефлекторов</label>
-                    </div>
-
-                    <div class="col-6 col-md-6 mb-3">
-                        <select class="custom-select" id="count_deflectors" onClick="calculateBoilerRoom();">
-                            <option value="1" selected="selected">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                        </select>
-                    </div>
+            <div class="card">
+                <div class="card-header" id="heading3">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed black" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                        Расчет потребности в тепле и топливе
+                      </button>
+                    </h5>
                 </div>
 
-                <div class="input-group mb-3 mt-3">
-                    <div class="col-6 col-md-6 mb-3">
-                        <label class="input-group-text bg-success white">Диаметр дефлектора (номенкл.)</label>
-                    </div>
+                <div id="collapse3" class="collapse show" aria-labelledby="heading3" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <form name="heat-and-fuel" method="post">
+                            <div class="border border-primary rounded mt-3">
+                                <div class="input-group mb-3 mt-3">
+                                    <div class="input-group-prepend col-12 col-md-4 mb-3">
+                                        <label class="input-group-text" for="hh">Максимальный часовой расход тепла на отопление</label>
+                                    </div>
 
-                    <div class="col-6 col-md-6 mb-3">
-                        <label class="input-group-text bg-light" id="real_deflect_result"> ? </label>
+                                    <div class="col-12 col-md-4 mb-3">
+                                         <input class="form-control" type="text" value="0.3" id="hh">
+                                    </div>
+
+                                    <div class="col-12 col-md-4 mb-3">
+                                        <select class="custom-select" id="dim_hh_hf">
+                                            <option selected value="1">Гкал/ч</option>
+                                            <option value="0.859">МВт/ч</option>
+                                            <option value="0.000859">кВт/ч</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="input-group mb-3 mt-3">
+                                    <div class="input-group-prepend col-12 col-md-4 mb-3">
+                                        <label class="input-group-text" for="hv">Максимальный часовой расход тепла на вентиляцию</label>
+                                    </div>
+
+                                    <div class="col-12 col-md-4 mb-3">
+                                         <input class="form-control" type="text" value="0.3" id="hv">
+                                    </div>
+
+                                    <div class="col-12 col-md-4 mb-3">
+                                        <select class="custom-select" id="dim_hv_hf">
+                                            <option selected value="1">Гкал/ч</option>
+                                            <option value="0.859">МВт/ч</option>
+                                            <option value="0.000859">кВт/ч</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="input-group mb-3 mt-3">
+                                    <div class="input-group-prepend col-12 col-md-4 mb-3">
+                                        <label class="input-group-text" for="hw">Средний часовой расход тепла на ГВС</label>
+                                    </div>
+
+                                    <div class="col-12 col-md-4 mb-3">
+                                         <input class="form-control" type="text" value="0.2" id="hw" title="средний часовой расход тепла на ГВС равен Qmax / 2,4">
+                                    </div>
+
+                                    <div class="col-12 col-md-4 mb-3">
+                                        <select class="custom-select" id="dim_hw_hf">
+                                            <option selected value="1">Гкал/ч</option>
+                                            <option value="0.859">МВт/ч</option>
+                                            <option value="0.000859">кВт/ч</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="input-group mb-3 mt-3">
+                                    <div class="input-group-prepend col-12 col-md-4 mb-3">
+                                        <label class="input-group-text" for="ht">Максимальный часовой расход тепла на технологические нужды</label>
+                                    </div>
+
+                                    <div class="col-12 col-md-4 mb-3">
+                                         <input class="form-control" type="text" value="0.7" id="ht">
+                                    </div>
+
+                                    <div class="col-12 col-md-4 mb-3">
+                                        <select class="custom-select" id="dim_ht_hf">
+                                            <option selected value="1">Гкал/ч</option>
+                                            <option value="0.859">МВт/ч</option>
+                                            <option value="0.000859">кВт/ч</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border border-primary rounded mt-3">
+                                <div class="input-group mb-3 mt-3">
+                                    <div class="input-group-prepend col-12 col-md-6 mb-3">
+                                        <label class="input-group-text" for="efficiency_hf">КПД теплогенератора, %</label>
+                                    </div>
+
+                                    <div class="col-12 col-md-6 mb-3">
+                                         <input class="form-control" type="text" value="80" id="efficiency_hf">
+                                    </div>
+                                </div>
+                                <div class="input-group mb-3 mt-3">
+                                    <div class="input-group-prepend col-12 col-md-6 mb-3">
+                                        <label class="input-group-text" for="hoc_hf">Удельная теплота сгорания топлива</label>
+                                    </div>
+
+                                    <div class="col-12 col-md-6 mb-3">
+                                         <input class="form-control" type="text" value="8000" id="hoc_hf">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border border-primary rounded mt-3">
+                                <div class="input-group mb-3 mt-3">
+                                    <div class="input-group-prepend col-12 col-md-6 mb-3">
+                                        <label class="input-group-text" for="t_heat_ins">Расчетная температура в помещении для отопления, °С</label>
+                                    </div>
+
+                                    <div class="col-12 col-md-6 mb-3">
+                                         <input class="form-control" type="text" value="22" id="t_heat_ins">
+                                    </div>
+                                </div>
+                                <div class="input-group mb-3 mt-3">
+                                    <div class="input-group-prepend col-12 col-md-6 mb-3">
+                                        <label class="input-group-text" for="t_vent_ins">Расчетная температура в помещении для вентиляции, °С</label>
+                                    </div>
+
+                                    <div class="col-12 col-md-6 mb-3">
+                                         <input class="form-control" type="text" value="22" id="t_vent_ins">
+                                    </div>
+                                </div>
+                                <div class="input-group mb-3 mt-3">
+                                    <div class="input-group-prepend col-12 col-md-6 mb-3">
+                                        <label class="input-group-text" for="t_heat_ex">Расчетная температура наружного воздуха для отопления, °С</label>
+                                    </div>
+
+                                    <div class="col-12 col-md-6 mb-3">
+                                         <input class="form-control" type="text" value="-27" id="t_heat_ex">
+                                    </div>
+                                </div>
+                                <div class="input-group mb-3 mt-3">
+                                    <div class="input-group-prepend col-12 col-md-6 mb-3">
+                                        <label class="input-group-text" for="t_vent_ex">Расчетная температура наружного воздуха для вентиляции, °С</label>
+                                    </div>
+
+                                    <div class="col-12 col-md-6 mb-3">
+                                         <input class="form-control" type="text" value="-20" id="t_vent_ex">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border border-primary rounded mt-3">
+                                <div class="input-group mb-3 mt-3">
+                                    <div class="input-group-prepend col-12 col-md-6 mb-3">
+                                        <label class="input-group-text" for="heat_period">Продолжительность отопительного периода, сут.</label>
+                                    </div>
+
+                                    <div class="col-12 col-md-6 mb-3">
+                                         <input class="form-control" type="text" value="210" id="heat_period">
+                                    </div>
+                                </div>
+                                <div class="input-group mb-3 mt-3">
+                                    <div class="input-group-prepend col-12 col-md-6 mb-3">
+                                        <label class="input-group-text" for="hour_tech">Количество часов работы в сутки технологического оборудования</label>
+                                    </div>
+
+                                    <div class="col-12 col-md-6 mb-3">
+                                         <input class="form-control" type="text" value="8" id="hour_tech">
+                                    </div>
+                                </div>
+                                <div class="input-group mb-3 mt-3">
+                                    <div class="input-group-prepend col-12 col-md-6 mb-3">
+                                        <label class="input-group-text" for="day_tech">Количество дней в году работы технологического оборудования</label>
+                                    </div>
+
+                                    <div class="col-12 col-md-6 mb-3">
+                                         <input class="form-control" type="text" value="310" id="day_tech">
+                                    </div>
+                                </div>
+                            </div>
+                            <button onClick="calculateHeatAndFuel();" class="btn btn-primary col-md-12 mt-3" type="button" name="button">Рассчитать</button>
+
+                            <div class="border border-success rounded mt-3">
+                                <h5 class="text-left m-3">Годовые расходы тепла</h5>
+                                <div class="input-group mb-3 mt-3">
+                                    <div class="input-group-prepend col-12 col-md-4 mb-3">
+                                        <label class="input-group-text bg-success white">Суммарная нагрузка на котельную</label>
+                                    </div>
+
+                                    <div class="col-12 col-md-4 mb-3">
+                                        <label class="input-group-text bg-light" id="boil_summ_pow"> ? </label>
+                                    </div>
+
+                                    <div class="col-12 col-md-4 mb-3">
+                                        <select class="custom-select" id="boil_summ_pow_dim" onClick="calculateHeatAndFuel();">
+                                            <option selected value="1">Гкал/ч</option>
+                                            <option value="1.163">МВт/ч</option>
+                                            <option value="1163">кВт/ч</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="input-group mb-3 mt-3">
+                                    <div class="input-group-prepend col-12 col-md-4 mb-3">
+                                        <label class="input-group-text bg-success white">Годовой расход тепла на отопление</label>
+                                    </div>
+
+                                    <div class="col-12 col-md-4 mb-3">
+                                        <label class="input-group-text bg-light" id="heat_sum"> ? </label>
+                                    </div>
+
+                                    <div class="col-12 col-md-4 mb-3">
+                                        <select class="custom-select" id="heat_sum_dim">
+                                            <option selected value="1">Гкал/ч</option>
+                                            <option value="0.859">МВт/ч</option>
+                                            <option value="0.000859">кВт/ч</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="input-group mb-3 mt-3">
+                                    <div class="input-group-prepend col-12 col-md-4 mb-3">
+                                        <label class="input-group-text bg-success white">Годовой расход тепла на вентиляцию</label>
+                                    </div>
+
+                                    <div class="col-12 col-md-4 mb-3">
+                                        <label class="input-group-text bg-light" id="vent_sum"> ? </label>
+                                    </div>
+
+                                    <div class="col-12 col-md-4 mb-3">
+                                        <select class="custom-select" id="vent_sum_dim">
+                                            <option selected value="1">Гкал/ч</option>
+                                            <option value="0.859">МВт/ч</option>
+                                            <option value="0.000859">кВт/ч</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="input-group mb-3 mt-3">
+                                    <div class="input-group-prepend col-12 col-md-4 mb-3">
+                                        <label class="input-group-text bg-success white">Годовой расход тепла на ГВС</label>
+                                    </div>
+
+                                    <div class="col-12 col-md-4 mb-3">
+                                        <label class="input-group-text bg-light" id="hw_sum"> ? </label>
+                                    </div>
+
+                                    <div class="col-12 col-md-4 mb-3">
+                                        <select class="custom-select" id="hw_sum_dim">
+                                            <option selected value="1">Гкал/ч</option>
+                                            <option value="0.859">МВт/ч</option>
+                                            <option value="0.000859">кВт/ч</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="input-group mb-3 mt-3">
+                                    <div class="input-group-prepend col-12 col-md-4 mb-3">
+                                        <label class="input-group-text bg-success white">Годовой расход тепла на технологические нужды</label>
+                                    </div>
+
+                                    <div class="col-12 col-md-4 mb-3">
+                                        <label class="input-group-text bg-light" id="tech_sum"> ? </label>
+                                    </div>
+
+                                    <div class="col-12 col-md-4 mb-3">
+                                        <select class="custom-select" id="tech_sum_dim">
+                                            <option selected value="1">Гкал/ч</option>
+                                            <option value="0.859">МВт/ч</option>
+                                            <option value="0.000859">кВт/ч</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="input-group mb-3 mt-3">
+                                    <div class="input-group-prepend col-12 col-md-4 mb-3">
+                                        <label class="input-group-text bg-success white">Годовой расход тепла на потери в тепловых сетях и нужды котельной</label>
+                                    </div>
+
+                                    <div class="col-12 col-md-4 mb-3">
+                                        <label class="input-group-text bg-light" id="lost_sum"> ? </label>
+                                    </div>
+
+                                    <div class="col-12 col-md-4 mb-3">
+                                        <select class="custom-select" id="lost_sum_dim">
+                                            <option selected value="1">Гкал/ч</option>
+                                            <option value="0.859">МВт/ч</option>
+                                            <option value="0.000859">кВт/ч</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="border border-success rounded mt-3">
+                                <h5 class="text-left m-3">Годовой расход газа и условного топлива</h5>
+                                <div class="input-group mb-3 mt-3">
+                                    <div class="input-group-prepend col-12 col-md-6 mb-3">
+                                        <label class="input-group-text bg-success white">Годовой расход газа, тыс.нм³</label>
+                                    </div>
+
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <label class="input-group-text bg-light" id="gas_sum_hf"> ? </label>
+                                    </div>
+                                </div>
+                                <div class="input-group mb-3 mt-3">
+                                    <div class="input-group-prepend col-12 col-md-6 mb-3">
+                                        <label class="input-group-text bg-success white">Годовой расход условного топлива, тыс.т.у.т.</label>
+                                    </div>
+
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <label class="input-group-text bg-light" id="tut_sum_hf"> ? </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border border-success rounded mt-3">
+                                <h5 class="text-left m-3">Максимальный часовой расход газа и удельный расход</h5>
+                                <div class="input-group mb-3 mt-3">
+                                    <div class="input-group-prepend col-12 col-md-6 mb-3">
+                                        <label class="input-group-text bg-success white">Максимальный часовой расход газа, нм³/ч</label>
+                                    </div>
+
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <label class="input-group-text bg-light" id="hour_max_gas"> ? </label>
+                                    </div>
+                                </div>
+                                <div class="input-group mb-3 mt-3">
+                                    <div class="input-group-prepend col-12 col-md-6 mb-3">
+                                        <label class="input-group-text bg-success white">Удельный расход условного топлива, кг у.т.</label>
+                                    </div>
+
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <label class="input-group-text bg-light" id="spec_cons"> ? </label>
+                                    </div>
+                                </div>
+                            <div>
+                        </form>
                     </div>
                 </div>
-                <p>*Расчет дефлектора типа УКР НИИСТ ДВК-5, при действии ветра 2 м/с, для других условий или типов воспользуйтесь <a href="things/pdf/deflectors.pdf">таблицей для подбора</a></p>
             </div>
+        </div>
 
-            <div class="border border-success rounded mt-3 mb-3">
-                <h5 class="text-left m-3">Расчет жалюзийной решетки</h5>
-                <div class="input-group mb-3 mt-3">
-                    <div class="col-6 col-md-6 mb-3">
-                        <label class="input-group-text bg-success white">Площадь ж.р. (расчетная)</label>
-                    </div>
-
-                    <div class="col-6 col-md-6 mb-3">
-                        <label class="input-group-text bg-light" id="square_grille_calc"> ? </label>
-                    </div>
-                </div>
-
-                <div class="input-group mb-3 mt-3">
-                    <div class="col-6 col-md-6 mb-3">
-                        <label class="input-group-text bg-success white">Количество ж.р.</label>
-                    </div>
-
-                    <div class="col-6 col-md-6 mb-3">
-                        <select class="custom-select" id="count_grille" onClick="calculateBoilerRoom();">
-                            <option value="1" selected="selected">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="input-group mb-3 mt-3">
-                    <div class="col-6 col-md-6 mb-3">
-                        <label class="input-group-text bg-success white">Размер решетки (номенкл.)</label>
-                    </div>
-
-                    <div class="col-6 col-md-6 mb-3">
-                        <label class="input-group-text bg-light" id="real_square_grille"> ? </label>
-                    </div>
-                </div>
-            </div>
-        </form>
-    </div>
 </main>
-
-
 
 <!-- Footer -->
 <footer class="pt-5 pb-4" id="contact">
