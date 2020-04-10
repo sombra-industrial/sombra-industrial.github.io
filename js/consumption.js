@@ -1,4 +1,6 @@
-
+/*jshint esversion: 6 */
+/* jshint node: true */
+/* jshint browser: true, devel: true */
 // функция проверки на число
 function isNumeric(num) {
 	return !isNaN(parseFloat(num)) && isFinite(num);
@@ -31,9 +33,9 @@ function calculateGasConsumption(){
 	var n_consump = document.getElementById("consumpion_dim").options.selectedIndex;
 	var consump_dim = document.getElementById("consumpion_dim").options[n_consump].value;
 
-	var result = (pow * pow_dim * consump_dim / ((eff * 0.01) * hoc * hoc_dim)).toFixed(2);
+	var resultConsumption = (pow * pow_dim * consump_dim / ((eff * 0.01) * hoc * hoc_dim)).toFixed(2);
 
-	changeResult('result', result);
+	changeResult('resultGasConsumtion', resultConsumption);
 }
 function calculateBoilerRoom() {
 // расчет ЛСК
@@ -106,4 +108,35 @@ function calculateBoilerRoom() {
 	changeResult('real_deflect_result', closestRightVal);
 	changeResult('square_grille_calc', grilleSquare);
 	changeResultGrille('real_square_grille', closestRightValGrille);
+}
+// расчет годового потребления тепла и топлива
+function calculateHeatAndFuel() {
+	'use strict';
+	// часовой расход на отопление
+	let hh = document.getElementById('hh').value.replace(/,/, '.');
+	// размерность часового расхода на отопление
+	let n_hh = document.getElementById("dim_hh_hf").options.selectedIndex;
+	let hh_dim = parseFloat(document.getElementById("dim_hh_hf").options[n_hh].value);
+	// внутренняя тепмература для расчета отопления
+	let t_heat_ins = document.getElementById('t_heat_ins').value.replace(/,/, '.');
+	// наружная температура для расчета отопления
+	let t_heat_ex = document.getElementById('t_heat_ex').value.replace(/,/, '.');
+	// продолжительность отопительного периода
+	let heat_period = document.getElementById('heat_period').value.replace(/,/, '.');
+	// средняя за период наружная температура
+	let t_mid = document.getElementById('t_mid').value.replace(/,/, '.');
+	// годовой расход на отопление
+
+
+	let n_heat_sum_dim = document.getElementById("heat_sum_dim").options.selectedIndex;
+	let heat_sum_dim = parseFloat(document.getElementById("heat_sum_dim").options[n_heat_sum_dim].value);
+
+	let heat_sum = ((hh * hh_dim) * (t_heat_ins - t_mid) / (t_heat_ins - t_heat_ex) * 24 * heat_period * heat_sum_dim).toFixed(2);
+
+
+
+
+
+
+	changeResult('heat_sum', heat_sum);
 }
