@@ -76,7 +76,7 @@
                 </button>
               </h5>
             </div>
-            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
               <div class="card-body">
                 <form name="gas_consumption" method="post">
                   <div class="input-group mb-3 mt-3">
@@ -387,69 +387,78 @@
                   </button>
                 </h5>
             </div>
-            <div id="collapse3" class="collapse show" aria-labelledby="heading3" data-parent="#accordionExample">
+            <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordionExample">
               <div class="card-body">
                 <form name="heat-and-fuel" method="post">
                     <div class="border border-primary rounded mt-3">
                       <div class="input-group mb-3 mt-3">
-                        <div class="input-group-prepend col-12 col-md-4 mb-3">
-                          <label class="input-group-text" for="hh">Максимальный часовой расход тепла на отопление</label>
+                        <div class="input-group-prepend col-12 col-md-6 mb-6">
+                          <label class="input-group-text" for="hh">Максимальный часовой расход тепла на отопление, Гкал/ч</label>
                         </div>
-                        <div class="col-12 col-md-4 mb-3">
+                        <div class="col-12 col-md-6 mb-6">
                           <input class="form-control" type="text" value="0.3" id="hh">
                         </div>
-                        <div class="col-12 col-md-4 mb-3">
+                        <!-- <div class="col-12 col-md-4 mb-3">
                           <select class="custom-select" id="dim_hh_hf">
                             <option value="1163">кВт/ч</option>
                             <option value="1.163">МВт/ч</option>
                             <option selected value="1">Гкал/ч</option>
                           </select>
-                        </div>
+                        </div> -->
                       </div>
                       <div class="input-group mb-3 mt-3">
-                        <div class="input-group-prepend col-12 col-md-4 mb-3">
-                          <label class="input-group-text" for="hv">Максимальный часовой расход тепла на вентиляцию</label>
+                        <div class="input-group-prepend col-12 col-md-6 mb-6">
+                          <label class="input-group-text" for="hv">Максимальный часовой расход тепла на вентиляцию, Гкал/ч</label>
                         </div>
-                        <div class="col-12 col-md-4 mb-3">
+                        <div class="col-12 col-md-6 mb-6">
                           <input class="form-control" type="text" value="0.3" id="hv">
                         </div>
-                        <div class="col-12 col-md-4 mb-3">
+                        <!-- <div class="col-12 col-md-4 mb-3">
                           <select class="custom-select" id="dim_hv_hf">
                             <option value="1163">кВт/ч</option>
                             <option value="1.163">МВт/ч</option>
                             <option selected value="1">Гкал/ч</option>
                           </select>
-                        </div>
+                        </div> -->
                       </div>
                       <div class="input-group mb-3 mt-3">
-                        <div class="input-group-prepend col-12 col-md-4 mb-3">
-                          <label class="input-group-text" for="hw">Средний часовой расход тепла на ГВС</label>
+                        <div class="input-group-prepend col-12 col-md-6 mb-6">
+                          <label class="input-group-text" for="hw">Средний часовой расход тепла на ГВС, Гкал/ч (можно принять как максимальный / 2,4)</label>
                         </div>
-                        <div class="col-12 col-md-4 mb-3">
+                        <div class="col-12 col-md-6 mb-6">
                           <input class="form-control" type="text" value="0.2" id="hw" title="средний часовой расход тепла на ГВС равен Qmax / 2,4">
                         </div>
-                        <div class="col-12 col-md-4 mb-3">
+                        <!-- <div class="col-12 col-md-4 mb-3">
                           <select class="custom-select" id="dim_hw_hf">
                             <option value="1163">кВт/ч</option>
                             <option value="1.163">МВт/ч</option>
                             <option selected value="1">Гкал/ч</option>
                           </select>
+                        </div> -->
+
+                      </div>
+                      <div class="input-group mb-3 mt-3">
+                        <div class="input-group-prepend col-12 col-md-6 mb-6">
+                          <label class="input-group-text" for="hw_n">Усредненное число часов работы системы ГВС в сутки</label>
+                        </div>
+                        <div class="col-12 col-md-6 mb-6">
+                          <input class="form-control" type="text" value="8" id="hw_n" title="средний часовой расход тепла на ГВС равен Qmax / 2,4">
                         </div>
                       </div>
                       <div class="input-group mb-3 mt-3">
-                        <div class="input-group-prepend col-12 col-md-4 mb-3">
-                          <label class="input-group-text" for="ht">Максимальный часовой расход тепла на технологические нужды</label>
+                        <div class="input-group-prepend col-12 col-md-6 mb-6">
+                          <label class="input-group-text" for="ht">Максимальный часовой расход тепла на технологические нужды, Гкал/ч</label>
                         </div>
-                        <div class="col-12 col-md-4 mb-3">
+                        <div class="col-12 col-md-6 mb-6">
                           <input class="form-control" type="text" value="0.7" id="ht">
                         </div>
-                        <div class="col-12 col-md-4 mb-3">
+                        <!-- <div class="col-12 col-md-4 mb-3">
                           <select class="custom-select" id="dim_ht_hf">
                             <option value="1163">кВт/ч</option>
                             <option value="1.163">МВт/ч</option>
                             <option selected value="1">Гкал/ч</option>
                           </select>
-                        </div>
+                        </div> -->
                       </div>
                     </div>
                     <div class="border border-primary rounded mt-3">
@@ -489,20 +498,20 @@
                       </div>
                       <div class="input-group mb-3 mt-3">
                         <div class="input-group-prepend col-12 col-md-6 mb-3">
-                          <label class="input-group-text" for="t_heat_ex">Расчетная температура наружного воздуха для отопления, °С</label>
+                          <label class="input-group-text" for="t_heat_ex">Расчетная температура наружного воздуха, °С</label>
                         </div>
                         <div class="col-12 col-md-6 mb-3">
                           <input class="form-control" type="text" value="-27" id="t_heat_ex">
                         </div>
                       </div>
-                      <div class="input-group mb-3 mt-3">
+                      <!-- <div class="input-group mb-3 mt-3">
                         <div class="input-group-prepend col-12 col-md-6 mb-3">
                           <label class="input-group-text" for="t_vent_ex">Расчетная температура наружного воздуха для вентиляции, °С</label>
                         </div>
                         <div class="col-12 col-md-6 mb-3">
                           <input class="form-control" type="text" value="-20" id="t_vent_ex">
                         </div>
-                      </div>
+                      </div> -->
                       <div class="input-group mb-3 mt-3">
                         <div class="input-group-prepend col-12 col-md-6 mb-3">
                           <label class="input-group-text" for="t_mid">Средняя температура наружного воздуха для данной местности, °С</label>
@@ -565,9 +574,9 @@
                         </div>
                         <div class="col-12 col-md-4 mb-3">
                           <select onClick="calculateHeatAndFuel();" class="custom-select" id="heat_sum_dim">
-                            <option value="1163">кВт/ч</option>
-                            <option value="1.163">МВт/ч</option>
-                            <option selected value="1">Гкал/ч</option>
+                            <option value="1163">кВт</option>
+                            <option value="1.163">МВт</option>
+                            <option selected value="1">Гкал</option>
                           </select>
                         </div>
                       </div>
@@ -579,10 +588,10 @@
                           <label class="input-group-text bg-light" id="vent_sum"> ? </label>
                         </div>
                         <div class="col-12 col-md-4 mb-3">
-                          <select class="custom-select" id="vent_sum_dim">
-                            <option value="1163">кВт/ч</option>
-                            <option value="1.163">МВт/ч</option>
-                            <option selected value="1">Гкал/ч</option>
+                          <select onClick="calculateHeatAndFuel();" class="custom-select" id="vent_sum_dim">
+                            <option value="1163">кВт</option>
+                            <option value="1.163">МВт</option>
+                            <option selected value="1">Гкал</option>
                           </select>
                         </div>
                       </div>
@@ -594,10 +603,10 @@
                           <label class="input-group-text bg-light" id="hw_sum"> ? </label>
                         </div>
                         <div class="col-12 col-md-4 mb-3">
-                          <select class="custom-select" id="hw_sum_dim">
-                            <option value="1163">кВт/ч</option>
-                            <option value="1.163">МВт/ч</option>
-                            <option selected value="1">Гкал/ч</option>
+                          <select onClick="calculateHeatAndFuel();" class="custom-select" id="hw_sum_dim">
+                            <option value="1163">кВт</option>
+                            <option value="1.163">МВт</option>
+                            <option selected value="1">Гкал</option>
                           </select>
                         </div>
                       </div>
@@ -609,10 +618,10 @@
                             <label class="input-group-text bg-light" id="tech_sum"> ? </label>
                         </div>
                         <div class="col-12 col-md-4 mb-3">
-                          <select class="custom-select" id="tech_sum_dim">
-                            <option value="1163">кВт/ч</option>
-                            <option value="1.163">МВт/ч</option>
-                            <option selected value="1">Гкал/ч</option>
+                          <select onClick="calculateHeatAndFuel();" class="custom-select" id="tech_sum_dim">
+                            <option value="1163">кВт</option>
+                            <option value="1.163">МВт</option>
+                            <option selected value="1">Гкал</option>
                           </select>
                         </div>
                       </div>
@@ -624,10 +633,10 @@
                           <label class="input-group-text bg-light" id="lost_sum"> ? </label>
                         </div>
                         <div class="col-12 col-md-4 mb-3">
-                          <select class="custom-select" id="lost_sum_dim">
-                            <option value="1163">кВт/ч</option>
-                            <option value="1.163">МВт/ч</option>
-                            <option selected value="1">Гкал/ч</option>
+                          <select onClick="calculateHeatAndFuel();" class="custom-select" id="lost_sum_dim">
+                            <option value="1163">кВт</option>
+                            <option value="1.163">МВт</option>
+                            <option selected value="1">Гкал</option>
                           </select>
                         </div>
                       </div>
@@ -675,8 +684,10 @@
             </div>
           </div>
         </div>
+        <div class="razdelitel"><div></div></div>
       </div>
     </main>
+
     <!-- Footer -->
     <footer class="pt-5 pb-4" id="contact">
       <div class="container">
