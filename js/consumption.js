@@ -19,20 +19,15 @@ function changeResultGrille(destination, value) {
 }
 /*функция, проводящая непосредственно расчет расхода газа  */
 function calculateGasConsumption(){
-
 	var hoc = document.getElementById('hoc').value.replace(/,/, '.');
 	var pow = document.getElementById('power').value.replace(/,/, '.');
 	var eff = document.getElementById('efficiency').value.replace(/,/, '.');
-
 	var n_hoc = document.getElementById("hoc_dim").options.selectedIndex;
 	var hoc_dim = parseFloat(document.getElementById("hoc_dim").options[n_hoc].value);
-
 	var n_pow = document.getElementById("power_dim").options.selectedIndex;
 	var pow_dim = document.getElementById("power_dim").options[n_pow].value;
-
 	var n_consump = document.getElementById("consumpion_dim").options.selectedIndex;
 	var consump_dim = document.getElementById("consumpion_dim").options[n_consump].value;
-
 	var resultConsumption = (pow * pow_dim * consump_dim / ((eff * 0.01) * hoc * hoc_dim)).toFixed(2);
 
 	changeResult('resultGasConsumtion', resultConsumption);
@@ -46,16 +41,12 @@ function calculateBoilerRoom() {
 	var hoc = document.getElementById('hoc_boil').value.replace(/,/, '.');
 	var pow = document.getElementById('power_boil').value.replace(/,/, '.');
 	var eff = document.getElementById('efficiency_boil').value.replace(/,/, '.');
-
 	var n_hoc = document.getElementById("hoc_boil_dim").options.selectedIndex;
 	var hoc_dim = parseFloat(document.getElementById("hoc_boil_dim").options[n_hoc].value);
-
 	var n_pow = document.getElementById("power_boil_dim").options.selectedIndex;
 	var pow_dim = document.getElementById("power_boil_dim").options[n_pow].value;
-
 	var n_consump = document.getElementById("consumpion_boil_dim").options.selectedIndex;
 	var consump_dim = document.getElementById("consumpion_boil_dim").options[n_consump].value;
-
 	var gas_boil = +(pow * pow_dim * consump_dim / ((eff * 0.01) * hoc * hoc_dim)).toFixed(2);
 // расчет расхода воздуха
 	var alf = document.getElementById('alfa').value.replace(/,/, '.');
@@ -82,7 +73,6 @@ function calculateBoilerRoom() {
 // расчет жалюзийной решетки
 	var grille_num_opt = document.getElementById('count_grille').options.selectedIndex;
 	var grille_num = document.getElementById('count_grille').options[grille_num_opt].value;
-
 	var air_vel = document.getElementById('air_velocity').value.replace(/,/, '.');
 	var grilleSquare = (exhaust_a_result / (air_vel * 3600 * grille_num)).toFixed(4);
 
@@ -112,7 +102,7 @@ function calculateBoilerRoom() {
 // расчет годового потребления тепла и топлива
 function calculateHeatAndFuel() {
 	'use strict';
-// часовой расход на отопление
+  // часовой расход на отопление
 	let hh = +document.getElementById('hh').value.replace(/,/, '.');
 	// внутренняя тепмература для расчета отопления
 	let t_heat_ins = document.getElementById('t_heat_ins').value.replace(/,/, '.');
@@ -122,53 +112,33 @@ function calculateHeatAndFuel() {
 	let heat_period = document.getElementById('heat_period').value.replace(/,/, '.');
 	// средняя за период наружная температура
 	let t_mid = document.getElementById('t_mid').value.replace(/,/, '.');
-	// годовой расход на отопление
-	let n_heat_sum_dim = document.getElementById("heat_sum_dim").options.selectedIndex;
-	let heat_sum_dim = parseFloat(document.getElementById("heat_sum_dim").options[n_heat_sum_dim].value);
-
-	let heat_sum = +(hh * heat_sum_dim * (t_heat_ins - t_mid) / (t_heat_ins - t_heat_ex) * 24 * heat_period).toFixed(2);
-
-// часовой расход на вентиляцию
+// годовой расход на отопление
+	let heat_sum = +(hh * (t_heat_ins - t_mid) / (t_heat_ins - t_heat_ex) * 24 * heat_period).toFixed(2);
+  // часовой расход на вентиляцию
 	let hv = +document.getElementById('hv').value.replace(/,/, '.');
 	// внутренняя тепмература для расчета вентиляции
 	let t_vent_ins = document.getElementById('t_vent_ins').value.replace(/,/, '.');
 	// годовой расход на вентиляцию
-	let n_vent_sum_dim = document.getElementById("vent_sum_dim").options.selectedIndex;
-	let vent_sum_dim = parseFloat(document.getElementById("vent_sum_dim").options[n_vent_sum_dim].value);
-
-	let vent_sum = +(hv * vent_sum_dim * (t_vent_ins - t_mid) / (t_vent_ins - t_heat_ex) * 24 * heat_period).toFixed(2);
-
-// часовой расход на ГВС
+	let vent_sum = +(hv * (t_vent_ins - t_mid) / (t_vent_ins - t_heat_ex) * 24 * heat_period).toFixed(2);
+  // часовой расход на ГВС
 	let hw = +document.getElementById('hw').value.replace(/,/, '.');
 	// средний расход тепла на ГВС в летний период
 	let q_hm_s = hw * 0.8;
 	// Усредненное число часов работы системы ГВС в сутки
 	let hw_n = document.getElementById('hw_n').value.replace(/,/, '.');
-
-	// годовой расход тепла на ГВС
-	let n_hw_sum_dim = document.getElementById("hw_sum_dim").options.selectedIndex;
-	let hw_sum_dim = parseFloat(document.getElementById("vent_sum_dim").options[n_hw_sum_dim].value);
-
-	let hw_sum = +( ((hw * heat_period * hw_n) + q_hm_s *(350 -heat_period) * hw_n) * hw_sum_dim).toFixed(2);
-
-// часовой расход тепла на технологию
+// годовой расход тепла на ГВС
+	let hw_sum = +( ((hw * heat_period * hw_n) + q_hm_s *(350 -heat_period) * hw_n)).toFixed(2);
+  // часовой расход тепла на технологию
 	let ht = +document.getElementById('ht').value.replace(/,/, '.');
 	 // количество часов работы технологии
 	let hour_tech = document.getElementById('hour_tech').value.replace(/,/, '.');
 	// количество дней работы технологии
 	let day_tech = document.getElementById('day_tech').value.replace(/,/, '.');
-	// годовой расход тепла на технологию
-	let n_tech_sum_dim = document.getElementById("tech_sum_dim").options.selectedIndex;
-	let tech_sum_dim = parseFloat(document.getElementById("tech_sum_dim").options[n_tech_sum_dim].value);
-
-	let tech_sum = +(ht * hour_tech * day_tech * tech_sum_dim).toFixed(2);
-	// годовой расход тепла на потери в теплосетях
-	let n_lost_sum_dim = document.getElementById("lost_sum_dim").options.selectedIndex;
-	let lost_sum_dim = parseFloat(document.getElementById("lost_sum_dim").options[n_lost_sum_dim].value);
-
+// годовой расход тепла на технологию
+	let tech_sum = +(ht * hour_tech * day_tech).toFixed(2);
+// годовой расход тепла на потери в теплосетях
 	let total = +(tech_sum + hw_sum + vent_sum + heat_sum);
-	let lost_sum = ( (tech_sum + hw_sum + vent_sum + heat_sum) * 0.03 * lost_sum_dim ).toFixed(2);
-
+	let lost_sum = ( (tech_sum + hw_sum + vent_sum + heat_sum) * 0.03  ).toFixed(2);
 // годовой расход газа
 	let hoc_hf = +document.getElementById('hoc_hf').value.replace(/,/, '.');
 	let efficiency_hf = +document.getElementById('efficiency_hf').value.replace(/,/, '.') * 0.01;
@@ -181,7 +151,6 @@ function calculateHeatAndFuel() {
 	let hour_max_gas = ( total_h * 1000000 / (hoc_hf * efficiency_hf) ).toFixed(2);
 	// удельный расход
 	let spec_cons = (tut_sum_hf * 1000000 / total).toFixed(2);
-
 
 	changeResult('heat_sum', heat_sum);
 	changeResult('vent_sum', vent_sum);
